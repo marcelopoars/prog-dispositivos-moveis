@@ -1,0 +1,364 @@
+<!-- 
+
+    * PROJETO 01 - Desenvolvimento de Interfaces para Dispositivos Móveis
+    * Faculdade Senac
+    * Aluno: Marcelo Pereira 
+
+ -->
+
+ <!DOCTYPE html>
+ <html lang="pt-br">
+ 
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <!-- Google Fonts - Raleway -->
+     <link href="https://fonts.googleapis.com/css?family=Raleway:300,700&display=swap" rel="stylesheet">
+     <!-- Google Fonts - Roboto -->
+     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+     <!-- Ícones -->
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+     <!-- Normalize -->
+     <link rel="stylesheet" href="vendors/css/normalize.min.css">
+     <!-- Importação do sistema de grid -->
+     <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+     <!-- Importação do nossa folha de estilo -->
+     <link rel="stylesheet" href="resources/css/style.css">
+     <!-- Media Queries -->
+     <link rel="stylesheet" href="resources/css/media-queries.css">
+
+     <title>Projeto - 01: Desenvolvimento para Disp. Móveis</title>
+ </head>
+
+<body>
+
+<div class="nav-topo">
+  <div class="container">
+    <nav id="navigation">
+      <a href="#" class="logo"><i class="fas fa-concierge-bell"></i> Nostra Pasta</a> <a aria-label="mobile menu" class="nav-toggle"> <span></span> <span></span> <span></span> </a>
+      <ul class="menu-left">
+          <li><a href="#diferencial">Diferencial</a></li>
+          <li><a href="#cardapio">Cardápio</a></li>
+          <li><a href="#pedido">Pedido</a></li>
+          <li><a href="#cidades">Cidades</a></li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
+    <!-- HERO e Container botões action -->
+    <header>
+        <div class="hero-text-box">
+            <h1>A melhor massa da cidade<br><span>preparada na hora</span></h1>
+            <div class="botoes">
+                <a class="btn btn-full" href="#pedido">Faça seu pedido</a>
+                <a class="btn btn-ghost" href="#cardapio">Cardápio completo</a>
+            </div>
+        </div>
+    </header>
+
+
+
+
+    <!--Abrindo a seção Features -->
+    <section class="section-features" id="diferencial">
+        <div class="row">
+            <h2>O verdadeiro sabor da Itália</h2>
+            <p class="long-copy">
+                Nossas receitas são preparas com muito cuidado e carinho, como se fossem preparadas pela Nôna. Muito
+                mais qualidade, muito mais sabor.
+            </p>
+        </div>
+        <div class="row features">
+            <div class="col span-1-of-4 feature">
+                <i class="fas fa-calendar-check"></i>
+                <h3>Aberto 365 dias</h3>
+                <p>Abrimos todos os diass, mesmo em domingos e feriados. Estamos sempre de portas abertas esperando
+                    pela sua visita.</p>
+            </div>
+            <div class="col span-1-of-4 feature">
+                <i class="far fa-clock"></i>
+                <h3>Pronto em 15 min.</h3>
+                <p>Todos os nossos pedidos sao preparados em até 15 minutos. Estamos sempre preparados para melhor
+                    lhe atender.</p>
+            </div>
+            <div class="col span-1-of-4 feature">
+                <i class="fas fa-heartbeat"></i>
+                <h3>100% orgânico</h3>
+                <p>Trabalhamos com os melhores produtos da região e importados. Muito mais qualidade. Muito mais
+                    sabor.</p>
+            </div>
+            <div class="col span-1-of-4 feature">
+                <i class="fas fa-bread-slice"></i>
+                <h3>Produtos frescos</h3>
+                <p>Nossos produtos são sempre bem conservados e embalados cuidadosamente para manter sempre o melhor
+                    sabor e qualidade.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-photos" id="cardapio">
+        <h2>Nosso cardápio</h2>
+        <ul class="images-showcase">
+            <li>
+                <figure class="photo">
+                    <img src="vendors/img/1.jpg" alt="texto do documento" title="texto do documento" />
+                </figure>
+            </li>
+            <li>
+                <figure class="photo">
+                    <img src="vendors/img/2.jpg" alt="texto do documento" title="texto do documento" />
+                </figure>
+            </li>
+            <li>
+                <figure class="photo">
+                    <img src="vendors/img/3.jpg" alt="texto do documento" title="texto do documento" />
+                </figure>
+            </li>
+            <li>
+                <figure class="photo">
+                    <img src="vendors/img/4.jpg" alt="texto do documento" title="texto do documento" />
+                </figure>
+            </li>
+        </ul>
+        <ul class="images-showcase ">
+            <li>
+                <figure class="photo">
+                    <img src="vendors/img/5.jpg" alt="texto do documento" title="texto do documento" />
+                </figure>
+            </li>
+            <li>
+                <figure class="photo">
+                    <img src="vendors/img/6.jpg" alt="texto do documento" title="texto do documento" />
+                </figure>
+            </li>
+            <li>
+                <figure class="photo">
+                    <img src="vendors/img/7.jpg" alt="texto do documento" title="texto do documento" />
+                </figure>
+            </li>
+            <li>
+                <figure class="photo">
+                    <img src="vendors/img/8.jpg" alt="texto do documento" title="texto do documento" />
+                </figure>
+            </li>
+        </ul>
+    </section>
+
+    <!--Abrindo a seção steps (passos) -->
+    <section class="section-steps" id="pedido">
+        <!--Abrindo a div com a classe ROW para criar um container centralizado, será usando para colocar nosso título  -->
+        <div class="row">
+            <!--Título da seção -->
+            <h2>Esperando o quê? Faça seu pedido!</h2>
+            <!--Fechando a div ROW -->
+        </div>
+
+        <!-- Abrindo a div com a classe ROW para criar um container centralizado, será usando para colocar 2 colunas  -->
+        <div class="row steps-container">
+
+            <div class="col span-1-of-3 iphone">
+                <!-- Adiciona a imagem da tela de um smarphone com nosso aplicativo aberto -->
+                <img src="vendors/img/app-screen.png" alt="Seu pedido pelo iPhone">
+            </div>
+
+            <div class="col span-2-of-3">
+
+                <!-- Container com o primeiro passo -->
+                <div class="step">
+                    <div class="number">1</div>
+                    <p>Selecione qual plano melhor se encaixa no seu bolso!</p>
+                </div>
+
+                <!-- Container com o segundo passo -->
+                <div class="step">
+                    <div class="number">2</div>
+                    <p>Escolha uma refeição deliciosa e super saúdavel!</p>
+                </div>
+
+                <!-- Container com o terceiro passo -->
+                <div class="step">
+                    <div class="number">3</div>
+                    <p>Aguarde apenas 15 minutos e receba a refeição escolhida na porta da sua casa!</p>
+                </div>
+
+                <div class="botoes-app">
+                    <!-- Botões para os aplicativos -->
+                    <a href="#" class="btn-app"><img src="vendors/img/download-app-ios.png" alt="Botão App Store"></a>
+                    <a href="#" class="btn-app"><img src="vendors/img/download-app-android.png"
+                            alt="Botão Play Store"></a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--Fechando a seção steps (passos) -->
+
+
+    <!--Abrindo a seção cidades -->
+    <section class="section-cities" id="cidades">
+
+        <div class="row">
+            <h2>Temos um restaurante pertinho de você</h2>
+        </div>
+
+        <div class="row containter-cidades">
+            <!-- Aqui irá o conteúdo da segunda div ROW, organizado em 4 colunas -->
+            <div class="col span-1-of-4 box">
+                <!--Primeira coluna -->
+                <img src="resources/img/canoas.jpg" alt="Porto Alegre" />
+                <h3>Canoas</h3>
+                <div class="city-feature">
+                    <i class="fas fa-street-view icon-small"></i>
+                    Av. Ipiranga, 999
+                </div>
+                <div class="city-feature">
+                    <i class="fas fa-carrot icon-small"></i>
+                    <p>20 opções de pratos</p>
+                </div>
+                <div class="city-feature">
+                    <i class="fab fa-facebook icon-small"></i>
+                    <a href="#">@saudenoprato_poa</a>
+                </div>
+            </div>
+            <div class="col span-1-of-4 box">
+                <!--Segunda coluna -->
+                <img src="resources/img/nh.jpg" alt="Porto Alegre" />
+                <h3>Novo Hamburgo</h3>
+                <div class="city-feature">
+                    <i class="fas fa-street-view icon-small"></i>
+                    <p>Av. Ipiranga, 999</p>
+                </div>
+                <div class="city-feature">
+                    <i class="fas fa-carrot icon-small"></i>
+                    <p>20 opções de pratos</p>
+                </div>
+                <div class="city-feature">
+                    <i class="fab fa-facebook icon-small"></i>
+                    <a href="#">@saudenoprato_poa</a>
+                </div>
+            </div>
+            <div class="col span-1-of-4 box">
+                <!--Terceira coluna -->
+                <img src="resources/img/poa.jpg" alt="Porto Alegre" />
+                <h3>Porto Alegre</h3>
+                <div class="city-feature">
+                    <i class="fas fa-street-view icon-small"></i>
+                    <p>Av. Ipiranga, 999</p>
+                </div>
+                <div class="city-feature">
+                    <i class="fas fa-carrot icon-small"></i>
+                    <p>20 opções de pratos</p>
+                </div>
+                <div class="city-feature">
+                    <i class="fab fa-facebook icon-small"></i>
+                    <a href="#">@saudenoprato_poa</a>
+                </div>
+            </div>
+            <div class="col span-1-of-4 box">
+                <!--Quarta coluna -->
+                <img src="resources/img/sao-leo.jpg" alt="Porto Alegre" />
+                <h3>São Leopoldo</h3>
+                <div class="city-feature">
+                    <i class="fas fa-street-view icon-small"></i>
+                    <p>Av. Ipiranga, 999</p>
+                </div>
+                <div class="city-feature">
+                    <i class="fas fa-carrot icon-small"></i>
+                    <p>20 opções de pratos</p>
+                </div>
+                <div class="city-feature">
+                    <i class="fab fa-facebook icon-small"></i>
+                    <a href="#">@saudenoprato_poa</a>
+                </div>
+            </div>
+        </div>
+        <!--Fechando a seção cidades -->
+    </section>
+
+
+    <!--Abrindo a seção testemunhos -->
+    <section class="section-testimonials">
+        <div class="row">
+            <!-- Aqui irá o título da primeira div -->
+            <h2>Alguns de nossos clientes</h2>
+        </div>
+        <div class="row">
+            <!-- Aqui irá o conteúdo da segunda div, organizado em 3 colunas -->
+            <div class="col span-1-of-3">
+                <!--Primeira coluna -->
+                <blockquote>
+                    <p>Ótimo atendimento e muita variedade de pratos e acompanhamentos. Eu mais que recomendo.</p>
+                    <cite>
+                        <img src="resources/img/customer-1.jpg" />Maiara Almeida
+                    </cite>
+                </blockquote>
+            </div>
+            <div class="col span-1-of-3">
+                <!--Segunda coluna -->
+                <blockquote>
+                    <p>Comida saúdavel rapidinho na porta da sua casa! A melhor opção para mim e para você. Adorei.</p>
+                    <cite>
+                        <img src="resources/img/customer-2.jpg" />Pedro Maciel
+                    </cite>
+                </blockquote>
+            </div>
+            <div class="col span-1-of-3">
+                <!--Terceira coluna -->
+                <blockquote>
+                    <p>Eu estava procurando por uma alimentação saudável e que coubesse no meu bolso e encontrei.</p>
+                    <cite>
+                        <img src="resources/img/customer-3.jpg" />Joana Nunes
+                    </cite>
+                </blockquote>
+            </div>
+        </div>
+        <!--Fechando a seção testemunhos -->
+    </section>
+
+
+    <!--Abrindo a seção de rodapé-->
+    <footer>
+        <div class="row footer-container">
+            <!-- Aqui irá nossos dois menus de navegação -->
+            <div class="col span-2-of-3">
+                <!-- Aqui irá nosso menu de navegação com links internos -->
+                <ul class="footer-nav">
+                    <li><a href="#diferencial">Diferencial</a></li>
+                    <li><a href="#cardapio">Cardápio</a></li>
+                    <li><a href="#pedido">Pedido</a></li>
+                    <li><a href="#cidades">Cidades</a></li>
+                </ul>
+            </div>
+            <div class="col span-1-of-3">
+                <ul class="social-links">
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <!-- Aqui irá uma mensagem de copyright ou endereço da empresa -->
+            <p>Copyright &copy; 2019 - <strong>MARCELO PEREIRA</strong> - Projeto 01 - Desenvolvimento de Interfaces para
+                Dispositivos Móveis - Faculdade Senac.</p>
+        </div>
+        <br>
+        <br>
+        <br>
+        <!--Fechando a seção de rodapé-->
+    </footer>
+
+
+
+<!-- Script JS JQuery -->
+<script src="vendors/js/jquery-3.4.1.min.js"></script> 
+<script src="vendors/js/jquery.easing.min.js"></script> 
+<!-- Script JS - SCROLL-NAV -->
+<script src="resources/js/scroll-nav.js"></script>
+
+</body>
+</html>

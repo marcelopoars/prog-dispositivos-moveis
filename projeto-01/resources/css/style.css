@@ -1,0 +1,631 @@
+/*
+
+  * PROJETO 01 - Desenvolvimento de Interfaces para Dispositivos Móveis
+  * Faculdade Senac
+  * Aluno: Marcelo Pereira 
+
+ */
+
+
+
+/* ----------------------------------------------- */
+/* Configurações Básicas */
+/* ----------------------------------------------- */
+
+/*Zerando bordas para ter maior domínio sobre os box*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #fff; /*Define a cor do fundo*/
+  color: #555;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400; /*de acordo com a fonte que importamos*/
+  font-size: 1.1rem;
+  line-height: 1.4rem;
+  text-rendering: optimizeLegibility; /*otimiza a renderização da fonte para letura, tendo uma melhor qualidade*/
+}
+
+/*Configurando minha linha do sistema de grid*/
+.row {
+  max-width: 1200px; /*Define o tamanho máximo da linha*/
+  margin: 0 auto; /*Define que o container vai ficar centralizado*/
+}
+
+
+/* Container nav menu responsivo */
+.container { padding: 0px 15px 0px 15px; }
+
+
+a {
+  text-decoration: none;
+  color: rgba(34, 34, 34, 0.8);
+}
+
+a:hover, a :focus { color: #A0288C; }
+
+.menu-left a {
+  display: inline-block;
+  position: relative;
+  padding-bottom: 0px;
+  transition: color .35s ease;
+}
+
+.menu-left a:before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  transition: width 0s ease, background .35s ease;
+}
+
+.menu-left a:after {
+  content: '';
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background: #A0288C;
+  transition: width .35s ease;
+}
+
+.menu-left a:hover:before {
+  width: 100%;
+  background: #A0288C;
+  transition: width .35s ease;
+}
+
+.menu-left a:hover:after {
+  width: 100%;
+  background: transparent;
+  transition: all 0s ease;
+}
+
+
+/**********************************
+        NAV TOPO
+***********************************/
+.nav-topo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: .5rem 0;
+  background: rgba(255, 255, 255, 0.92);
+  z-index: 3;
+  will-change: transform;
+  transition: background 0.3s, -webkit-transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1);
+  transition: transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1), background 0.3s;
+  transition: transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1), background 0.3s, -webkit-transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1);
+  transform: translateY(0);
+  -webkit-transform: translateY(0);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.nav-topo nav .logo {
+  float: left;
+ padding-top: .25rem;
+ padding-bottom: .25rem;
+  margin-right: 1rem;
+  font-size: 1.25rem;
+  line-height: inherit;
+  font-weight: 500;
+  color: black;
+}
+
+.nav-topo nav .logo:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.nav-topo nav ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.nav-topo nav ul li {
+  float: none;
+  margin-left: 0;
+}
+@media (min-width: 768px) {
+
+  .nav-topo nav ul li {
+    float: left;
+    margin-left: 1rem;
+  }
+}
+
+.nav-topo nav ul li a { display: block; }
+@media (min-width: 576px) {
+
+.nav-topo nav ul li a { display: block;  padding: .425rem 0rem;
+}
+}
+ @media (max-width: 768px) {
+
+ul { clear: both; }
+
+ul li { padding: .5em 0; }
+}
+
+.hide-nav {
+ transform: translateY(-120% !important); -webkit-transform: translateY(-120%) !important; }
+
+ul.menu-left {
+  display: block;
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  z-index: 10;
+}
+@media (min-width: 768px) {
+
+ul.menu-left {
+  display: block !important;
+  float: right;
+  max-height: none;
+}
+}
+
+ul.menu-left:before {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+ul.menu-left.collapse { max-height: 15em !important; }
+
+.nav-toggle {
+  display: block;
+  border-radius: 5px;
+  background-color: transparent;
+  float: right;
+  height: 38px;
+  width: 38px;
+  cursor: pointer;
+  padding: 8px 8px;
+}
+
+.nav-toggle.open span:first-child { transform: rotate(45deg) translate(4.4px, 4.4px); }
+
+.nav-toggle.open span:nth-child(2) {
+  width: 0%;
+  opacity: 0;
+}
+
+.nav-toggle.open span:last-child { transform: rotate(-45deg) translate(4.4px, -4.4px); }
+@media (min-width: 768px) {
+
+.nav-toggle { display: none; }
+}
+
+.nav-toggle span {
+  position: relative;
+  display: block;
+  height: 2px;
+  width: 100%;
+  margin-top: 4px;
+  background-color: #000;
+  transition: all .25s;
+}
+
+.signature {
+  position: fixed;
+  font-weight: 100;
+  bottom: 10px;
+  color: #000;
+  left: 0;
+  letter-spacing: 4px;
+  font-size: 10px;
+  width: 100vw;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+
+
+/* HEADER */
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero.jpg); /*explore outras cores e transparências*/
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-attachment: fixed; /*deixa a imagem fica no fundo, a imagem não acompanha a barra de rolagem*/
+
+  /* Aqui eu centrlizo a DIV  ".hero-text-box"  na horizontal e na vertical */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* CONTAINER HERO */
+.hero-text-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+/* BOTÕES */
+.btn:link,
+.btn:visited {
+    display: inline-block;
+    padding: 15px 35px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    color: #fff;
+    transition: background-color 0.2s, border 0.2s, color 0.2s; 
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+
+}
+
+.btn-full:link,
+.btn-full:visited {
+    background-color: #A0288C;
+    border: 1px solid #A0288C;
+    color: #fff; 
+    margin-right: 15px;   
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+    border: 1px solid #FBD5FC;
+    color: #FBD5FC;
+}
+
+.btn:hover,
+.btn:active {
+    background-color: #520C48;
+}
+
+.btn-full:hover,
+.btn-full:active {
+    border: 1px solid #520C48;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+    border: 1px solid #520C48;
+    color: #fff;
+}
+
+
+
+/* ----------------------------------------------- */
+                /* FEATURES */
+/* ----------------------------------------------- */
+
+.long-copy {
+  margin-bottom: 50px;
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+  text-align: center;
+}
+
+.features {
+  text-align: center;
+  padding-bottom: 0;
+}
+
+.feature {
+  padding: 5px;
+  margin: 20px 0;
+}
+
+.features .col i {
+  font-size: 350%; /*Tamanho do ícone*/
+  display: block;
+  color: #A0288C; /*cor da fonte = cor do ícone*/
+  margin-bottom: 10px; /*espaço entre o ícone e o título do feature*/
+  text-align: center;
+}
+
+/* ----------------------------------------------- */
+              /* GALERIA IMAGENS */
+/* ----------------------------------------------- */
+.images-showcase {
+  list-style: none; /*Retira marcadores*/
+  width: 100%; /*a lista agora ocupa toda largura da tela*/
+  display: flex;
+}
+
+.images-showcase li{
+  width: 25%;
+}
+
+.photo {
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  background-color: #000; /*Cor de fundo - preto*/
+}
+
+.photo img {
+  opacity: 0.7; /*deixa a imagem um pouco transparente*/
+  width: 100%;
+  height: auto; /*para não desfigurar a imagem*/
+  transform: scale(1.05);
+  transition: transform 0.5s, opacity 0.5s; /*Adiciona um período de transição quando houver alteração na propriedade transform ou opacity*/
+}
+
+.photo img:hover {
+  opacity:1;
+  transform: scale(1.15); /* magem aumentada em 15 */
+}
+
+
+
+/* ----------------------------------------------- */
+/* Seção Lista de Passos (Section Steps) */
+/* ----------------------------------------------- */
+
+/*Definindo cor de fundo para essa seção*/
+.section-steps {
+  background-color: #FBD5FC;
+}
+
+.steps-container {
+  max-width: 900px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: center;
+
+}
+
+.iphone img {
+  width: 90%;
+}
+
+/*Vamos criar uma regra para o elemento div dentro da classe step*/
+.number {
+  margin-right: 20px;
+  color: #FFF; /*Define cor da fonte*/
+  border: 2px solid #A0288C; /*define uma borda laranja*/
+  background-color: #A0288C;
+  border-radius: 50%; /*Arredonda as bordas*/
+  height: 55px;/*Define altura*/
+  width: 55px;/*Mesmo valor da altura, afinal queremos um circulo*/
+  text-align: center;/*Texto centralizado na horizontal, não na vertical*/
+  padding: 15px;/*espaço entre texto e borda do container*/
+  font-size: 2rem;
+
+}
+
+
+.step {
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  
+}
+
+.step:last-of-type {
+  margin-bottom: 50px;
+}
+
+.botoes-app {
+  margin: 50px 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn-app img {
+  max-height: 50px;
+  width: auto;
+  margin-right: 10px;
+}
+
+
+
+/* SECtION PADRÃO */
+section { padding-top: 80px; }
+
+/* HEADERS - Títulos */
+  h1, h2, h3 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+}
+
+
+h1 {
+    font-size: 2rem;
+    color: #fff;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+    line-height: 3rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 span {
+    font-size: 3rem;
+    text-transform: uppercase;
+    
+}
+
+h2 {
+    font-size: 2.5rem;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    line-height: 3.2rem;
+}
+
+h2:after {
+    display: flex;
+    height: 1px;
+    background-color: #A0288C;
+    content: " "; /*Conteúdo do item*/
+    width: 150px; /*Comprimento do item*/
+    margin: 0 auto; /*Centralizar*/
+    margin-top: 30px;
+}
+
+h3 {
+    margin: 20px 0;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+}
+
+
+/* ----------------------------------------------- */
+/* Seção Cidades */
+/* ----------------------------------------------- */
+.section-cities {
+  padding-bottom: 80px;
+}
+
+.section-cities img {width: 100%;}
+.section-cities h3{margin: 20px 0;}
+.city-feature {display: flex;}
+.city-feature i {
+  margin: 5px 0;
+  font-size: 1rem;
+  margin-right: 10px;
+  color: #A0288C;
+}
+
+.city-feature a {
+  color: #A0288C;
+}
+
+
+
+/* ----------------------------------------------- */
+/* Seção Testemunhos (Section Testimonials) */
+/* ----------------------------------------------- */
+
+/*Adicionando imagem de fundo na seção*/
+.section-testimonials {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img/background-customers.jpg);
+  background-size: cover; /*preencher toda a largura da janela do navegador*/
+  color: #fff; /*cor da fonte*/
+  background-attachment: fixed; /*deixa a imagem fica no fundo, a imagem não acompanha a barra de rolagem*/
+  padding-bottom: 80px;
+}
+
+blockquote {
+  font-style: italic; /*Deve ser importado a versão "italic" da fonte para poder usar*/
+  line-height: 145%; /*Altura da linha do texto*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-testimonials p {
+  text-align: center;
+}
+
+blockquote::before {
+  margin-top: 30px;
+  content: "\201C";
+  font-size: 5rem;
+  display: block;
+  color: #A0288C;
+  font-family: serif;
+}
+
+cite {
+  font-size: 1rem;
+  margin-top: 25px;
+  /* display: block; */
+}
+
+cite img {
+  height: 90px;
+  border-radius: 100%;
+  margin-right: 10px;
+  vertical-align:middle;
+  background-color: #A0288C;
+  padding: 5px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+
+
+/* ----------------------------------------------- */
+/* Seção Rodapé (Footer) */
+/* ----------------------------------------------- */
+
+footer {
+  background-color: #520C48;
+}
+
+.footer-container {
+  padding: 50px;
+}
+
+.footer-nav {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  font-size: 1rem;
+}
+
+.social-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-nav li,
+.social-links li {
+  margin: 10px 20px;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited {
+  text-decoration: none;
+  border: 0;
+  color: #A0288C;
+  transition: color 0.2s;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active {
+  color: #ddd;
+}
+
+.social-links li a:link,
+.social-links li a:visited {
+  font-size: 50%;
+}
+
+.social-links i {color: #A0288C; transition: 0.3s; font-size: 1rem;}
+.social-links .fa-facebook-f:hover {color: #3F5C9A;}
+.social-links .fa-instagram:hover {color: #7B39A9}
+.social-links .fa-twitter:hover {color: #53A7E7}
+.social-links .fa-youtube:hover {color: #F50500}
+
+
+.copyright {
+  padding: 30px 10px;
+  background-color: #FFF;
+  color: #333;
+  text-align: center;
+  font-size: .8rem;
+}

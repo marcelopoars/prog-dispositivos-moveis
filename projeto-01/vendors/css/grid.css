@@ -1,0 +1,62 @@
+/*  GROUPING  ============================================================================= */
+
+.row {
+    zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+}
+
+.row:before,
+.row:after {
+    content:"";
+    display:table;
+}
+
+.row:after {
+    clear:both;
+}
+
+/*  GRID COLUMN SETUP   ==================================================================== */
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+}
+
+.col:first-child { margin-left: 0; } /* all browsers except IE6 and lower */
+
+
+/*  GRID OF TWO   ==================== */
+.span-2-of-2 {
+	width: 100%;
+}
+
+.span-1-of-2 {
+	width: 49.2%;
+}
+
+/*  GRID OF THREE   ==================== */
+.span-1-of-3 {
+	width: 32.26%; 
+}
+
+.span-2-of-3 {
+	width: 66.13%; 
+}
+
+/*  GRID OF FOUR   ==================== */
+.span-1-of-4 {
+	width: 23.8%; 
+}
+
+
+/*  GRID OF TWELVE  ===================== */
+.span-8-of-12 {
+	width: 66.13%;
+}
+
+.span-4-of-12 {
+	width: 32.26%; 
+}
+
+.span-1-of-12 {
+	width: 6.86%; 
+}

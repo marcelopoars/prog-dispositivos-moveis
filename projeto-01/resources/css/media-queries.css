@@ -1,0 +1,173 @@
+/* Altera a columa para 99% em telas até 480px */
+
+/*****************************
+ 	MEDIA QUERY PARA DESTOP
+*****************************/
+
+/* .span-1-of-4 */
+@media only screen and (max-width: 1020px) {
+	.span-1-of-4 {
+		width: 30%; 
+	}
+}
+
+
+/*****************************
+ 	MEDIA QUERY PARA TABLETS
+*****************************/
+
+/* .span-1-of-4 */
+@media only screen and (max-width: 768px) {
+	.span-1-of-4 {
+		width: 48%; 
+	}
+}
+
+/* .span-1-of-3 */
+@media only screen and (max-width: 768px) {
+	.span-1-of-3 {
+		width: 48%;
+	}
+	.span-2-of-3 {
+		width: 60%; 
+	}
+	.iphone {
+		width: 30%;
+	}
+	.footer-container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+}
+
+/* 12 colunas */
+@media only screen and (max-width: 768px) {
+	.span-4-of-12 {
+		width: 20%; 
+	}
+	.span-4-of-12 {
+		width: 80%; 
+	}
+	h1{
+		font-size: 1.5rem;
+	}
+	h1 span{
+		font-size: 2.5rem;
+	}
+	h2 {
+		font-size: 2rem;
+	}
+}
+
+/*****************************
+ 	MEDIA QUERY PARA MOBILE
+*****************************/
+
+/* 03 colunas */
+@media only screen and (max-width: 480px) {
+	.span-1-of-3 {
+		width: 98%;
+	}
+	.span-2-of-3 {
+		width: 99%; 
+	}
+	.steps-container {
+		display: flex;
+		justify-content: center;
+	}
+	.iphone {
+		width: 50%;
+	}
+	.footer-nav {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		text-align: center;
+	}
+}
+
+/* 04 colunas */
+@media only screen and (max-width: 480px) {
+	.span-1-of-4 {
+		width: 99%; 
+	}
+	.botoes {
+		display: flex;
+		flex-direction: column;
+	}
+	.botoes .btn {
+		margin: 10px;
+		text-align: center;
+	}
+}
+
+
+/* NAV MENU RESPNSIVO */
+@media (min-width: 0) {
+.container {
+	max-width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.container:after {
+	content: " ";
+	display: block;
+	clear: both;
+}
+}
+
+@media (min-width: 576px) {
+.container {
+	max-width: 540px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.container:after {
+	content: " ";
+	display: block;
+	clear: both;
+}
+}
+
+@media (min-width: 768px) {
+.container {
+	max-width: 720px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.container:after {
+	content: " ";
+	display: block;
+	clear: both;
+}
+}
+
+@media (min-width: 992px) {
+.container {
+	max-width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.container:after {
+	content: " ";
+	display: block;
+	clear: both;
+}
+}
+
+@media (min-width: 1200px) {
+.container {
+	max-width: 1170px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.container:after {
+	content: " ";
+	display: block;
+	clear: both;
+}
+}
+
