@@ -1,0 +1,20 @@
+.display-4 {
+    font-size: 3rem;
+}
+
+
+/* Seção Contato */
+.form-control {
+    padding: 25px;
+    border-radius: 50px;
+}
+
+/* Input text-area */
+.area {
+    border-radius: 20px;
+}
+
+.btn-dark {
+    padding: 15px 30px;
+    border-radius: 50px;
+}

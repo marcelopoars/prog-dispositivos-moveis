@@ -46,11 +46,11 @@ $('.menu-left a').on('click', function() {
 
 // SHOW/HIDE NAV
 
-// Hide Header on on scroll down
+// Hide nav-bar on on scroll down
 var didScroll;
 var lastScrollTop = 0;
 var delta = 5;
-var navbarHeight = $('header').outerHeight();
+var navbarHeight = $('.nav-bar').outerHeight();
 
 $(window).scroll(function(event){
     didScroll = true;
@@ -74,13 +74,13 @@ function hasScrolled() {
     // This is necessary so you never see what is "behind" the navbar.
     if (st > lastScrollTop && st > navbarHeight){
         // Scroll Down
-        $('header').removeClass('show-nav').addClass('hide-nav');
+        $('.nav-bar').removeClass('show-nav').addClass('hide-nav');
         $('.nav-toggle').removeClass('open');
         $('.menu-left').removeClass('collapse');
     } else {
         // Scroll Up
         if(st + $(window).height() < $(document).height()) {
-            $('header').removeClass('hide-nav').addClass('show-nav');
+            $('.nav-bar').removeClass('hide-nav').addClass('show-nav');
         }
     }
 

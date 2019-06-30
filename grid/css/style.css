@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    /* background-color: red; */
+    padding: 10px;
+    font-family: sans-serif;
+    font-size: 1rem;
+}
+
+h1, h2, p { margin: 20px 0;}
+header, nav, main {
+    background-color: #333;
+    margin: 10px;
+    padding: 20px;
+    color: #ccc;
+}
+
