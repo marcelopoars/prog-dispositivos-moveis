@@ -95,13 +95,86 @@
     <p class="lead">Confira aqui a lista de frameworks para desenvolvimento front-end.</p>
   </div>
 
+  <!-- Seção DICA DO NERD - Cursos / eventos / Carreira -->
   <div class="container my-5">
     <h3 class="display-4">Dica do Nerd</h3>
     <p class="lead">Fique por dentro das novidades relacionadas ao mundo do desenvolvimento web.</p>
-    <p class="lead">Cursos | Eventos | Carreira</p>
+    <!-- TABS DICAS DO NERD -->
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Cursos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Eventos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Carreira</a>
+      </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+      <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+        <!-- Lista de CURSOS -->
+        <ul class="list-group">
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            Alura
+            <span class="badge badge-info badge-pill">></span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            CodeCademy
+            <span class="badge badge-info badge-pill">></span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            Udacity
+            <span class="badge badge-info badge-pill">></span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            Udacity
+            <span class="badge badge-info badge-pill">></span>
+          </li>
+        </ul>
+        <!-- Fim Lista de cursos -->
+      </div>
+      <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+        <!-- Lista de EVENTOS -->
+        <ul class="list-group">
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            Fórum Internacional de TI Banrisul
+            <span class="badge badge-info badge-pill">></span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            Brazil JS
+            <span class="badge badge-info badge-pill">></span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            Fórum de Software Livre
+            <span class="badge badge-info badge-pill">></span>
+          </li>
+        </ul>
+        <!-- Fim Lista de Eventos -->
+      </div>
+      <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+        <!-- Lista de VAGAS DE EMPREGO / CARREIRA -->
+        <ul class="list-group">
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            Baguete
+            <span class="badge badge-info badge-pill">></span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            Infojobs
+            <span class="badge badge-info badge-pill">></span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            Linkedin
+            <span class="badge badge-info badge-pill">></span>
+          </li>
+        </ul>
+        <!-- Fim Lista de Vagas de Emprego -->
+      </div>
+    </div>
+    <!-- Fim TABS DICAS DO NERD -->
   </div>
 
-  <!-- Seção Contato -->
+  <!-- Seção FORM CONTATO -->
   <div class="container-fluid bg-info py-5">
     <div class="container text-white col-lg-6">
       <h3 class="display-3 mb-3 text-center">Contato</h3>
@@ -129,7 +202,7 @@
     </div>
   </div><!-- Fim Seção Contato -->
 
-  <!-- Footer -->
+  <!-- FOOTER -->
   <div class="container-fluid py-5">
     <div class="container text-center">
       <p><small>&copy; Dica do Nerd 2009-2019 | Projeto Final - Desenvolvimento para Dispositivos Móveis - Fcudade
