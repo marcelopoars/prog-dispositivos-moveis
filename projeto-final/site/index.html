@@ -10,6 +10,7 @@
   <!-- Ícones -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
   <!-- Estilos CSS -->
+  <link rel="stylesheet" href="css/carousel.css">
   <link rel="stylesheet" href="css/style.css">
   <title>Dica do Nerd</title>
 </head>
@@ -44,57 +45,103 @@
     </div><!-- Fim Navbar -->
   </nav>
 
-  <div class="container">
+  <!-- Carousel -->
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
 
-    <!-- Camdo de busca no site -->
-    <form class="form-goup my-3 my-lg-4 d-flex justify-content-center">
-      <input class="form-control col-lg-8 mr-sm-2" type="search" placeholder="Buscar no site" aria-label="Buscar no site">
-    </form>
-    <!-- Fim campo de busca -->
-
-  </div>
-
-  <!-- Banne Destaque / Carousel -->
-  <div class="bd-example">
-    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="images/slider/visual-code.jpg" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="images/slider/bootstrap.jpg" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="images/slider/webpack.jpg" class="d-block w-100" alt="...">
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+          preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
+          <rect width="100%" height="100%" fill="#634085" /></svg>
+        <div class="container">
+            <div class="carousel-caption">
+                <h1>Bootstrap</h1>
+                <p>Crie projetos iniciais responsivos e móveis na Web com a biblioteca de componentes front-end mais popular do mundo.</p>
+                <p><a class="btn btn-lg btn-outline-light" href="#" role="button">Visite o site</a></p>
+              </div>
         </div>
       </div>
-      <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <!-- <span class="sr-only">Previous</span> -->
-      </a>
-      <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <!-- <span class="sr-only">Next</span> -->
-      </a>
+      <div class="carousel-item">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+          preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
+          <rect width="100%" height="100%" fill="#2B3A42" /></svg>
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Webpack</h1>
+            <p>Em sua essência, o webpack é um empacotador de módulos estáticos para aplicativos JavaScript modernos.</p>
+            <p><a class="btn btn-lg btn-outline-light" href="#" role="button">Visite o site</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+          preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
+          <rect width="100%" height="100%" fill="#777" /></svg>
+        <div class="container">
+            <div class="carousel-caption">
+                <h1>Another example headline.</h1>
+                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget
+                  metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                <p><a class="btn btn-lg btn-outline-light" href="#" role="button">Visite o site</a></p>
+              </div>
+        </div>
+      </div>
     </div>
-  </div><!-- Fim banner destaque -->
 
+    <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+
+  </div>
+  <!-- Fim carousel -->
+
+
+  <!-- Seção BUSCA NO SITE -->
+  <div class="container">
+    <form class="form-goup my-3 my-lg-4 d-flex justify-content-center">
+      <input class="form-control col-lg-12" type="search" placeholder="Buscar no site"
+        aria-label="Buscar no site">
+    </form>
+  </div>
+  <!-- Fim Seção BUSCA NO SITE -->
 
   <div class="container my-5">
     <h3 class="display-4">Plugins para Visual Code</h3>
     <p class="lead">Confira aqui a lista de plugins mais populares para o editor <strong>Visual Code</strong>.</p>
-    <img src="https://ms-python.gallerycdn.vsassets.io/extensions/ms-python/python/2019.6.22090/1561490512517/Microsoft.VisualStudio.Services.Icons.Small" alt="">
+    <img
+      src="https://ms-python.gallerycdn.vsassets.io/extensions/ms-python/python/2019.6.22090/1561490512517/Microsoft.VisualStudio.Services.Icons.Small"
+      alt="">
+      <img src="images/spotfy.webp" alt="">
   </div>
+
+    <!-- Barra de divisão de conteúdo -->
+    <div class="container">
+        <hr class="featurette-divider">
+      </div>
+      <!-- Fim Barra de divisão de conteúdo -->
+
 
   <div class="container my-5">
     <h3 class="display-4">Frameworks Front-end</h3>
     <p class="lead">Confira aqui a lista de frameworks para desenvolvimento front-end.</p>
   </div>
+
+  <!-- Barra de divisão de conteúdo -->
+  <div class="container">
+    <hr class="featurette-divider">
+  </div>
+  <!-- Fim Barra de divisão de conteúdo -->
+
 
   <!-- Seção DICA DO NERD - Cursos / eventos / Carreira -->
   <div class="container my-5">
@@ -119,64 +166,80 @@
       <div class="tab-pane fade show active" id="cursos" role="tabpanel" aria-labelledby="cursos-tab">
         <!-- Lista de CURSOS -->
         <div class="list-group">
-            <button type="button" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
-                Alura
-              <span class="badge badge-info badge-pill">></span>
-            </button>
-            <button type="button" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
-                CodeCademy
-              <span class="badge badge-info badge-pill">></span>
-            </button>
-            <button type="button" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
-                Udacity
-              <span class="badge badge-info badge-pill">></span>
-            </button>
-            <button type="button" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
-                Udemy
-              <span class="badge badge-info badge-pill">></span>
-            </button>
-          </div>
+          <button type="button"
+            class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+            Alura
+            <span class="badge badge-info badge-pill"><i class="fas fa-arrow-circle-right"></i></span>
+          </button>
+          <button type="button"
+            class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+            CodeCademy
+            <span class="badge badge-info badge-pill"><i class="fas fa-arrow-circle-right"></i></span>
+          </button>
+          <button type="button"
+            class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+            Udacity
+            <span class="badge badge-info badge-pill"><i class="fas fa-arrow-circle-right"></i></span>
+          </button>
+          <button type="button"
+            class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+            Udemy
+            <span class="badge badge-info badge-pill"><i class="fas fa-arrow-circle-right"></i></span>
+          </button>
+        </div>
         <!-- Fim Lista de cursos -->
       </div>
       <div class="tab-pane fade" id="eventos" role="tabpanel" aria-labelledby="eventos-tab">
         <!-- Lista de EVENTOS -->
         <div class="list-group">
-            <button type="button" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
-                Fórum Internacional de TI Banrisul
-              <span class="badge badge-info badge-pill">></span>
-            </button>
-            <button type="button" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
-                Brazil JS
-              <span class="badge badge-info badge-pill">></span>
-            </button>
-            <button type="button" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
-                Fórum de Software Livre
-              <span class="badge badge-info badge-pill">></span>
-            </button>
-          </div>
+          <button type="button"
+            class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+            Fórum Internacional de TI Banrisul
+            <span class="badge badge-info badge-pill"><i class="fas fa-arrow-circle-right"></i></span>
+          </button>
+          <button type="button"
+            class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+            Brazil JS
+            <span class="badge badge-info badge-pill"><i class="fas fa-arrow-circle-right"></i></span>
+          </button>
+          <button type="button"
+            class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+            Fórum de Software Livre
+            <span class="badge badge-info badge-pill"><i class="fas fa-arrow-circle-right"></i></span>
+          </button>
+        </div>
         <!-- Fim Lista de Eventos -->
       </div>
       <div class="tab-pane fade" id="carreira" role="tabpanel" aria-labelledby="carreira-tab">
         <!-- Lista de VAGAS DE EMPREGO / CARREIRA -->
         <div class="list-group">
-            <button type="button" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
-                Baguete
-              <span class="badge badge-info badge-pill">></span>
-            </button>
-            <button type="button" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
-                Infojobs
-              <span class="badge badge-info badge-pill">></span>
-            </button>
-            <button type="button" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
-                Linkedin
-              <span class="badge badge-info badge-pill">></span>
-            </button>
-          </div>
+          <button type="button"
+            class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+            Baguete
+            <span class="badge badge-info badge-pill"><i class="fas fa-arrow-circle-right"></i></span>
+          </button>
+          <button type="button"
+            class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+            Infojobs
+            <span class="badge badge-info badge-pill"><i class="fas fa-arrow-circle-right"></i></span>
+          </button>
+          <button type="button"
+            class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+            Linkedin
+            <span class="badge badge-info badge-pill"><i class="fas fa-arrow-circle-right"></i></span>
+          </button>
+        </div>
         <!-- Fim Lista de Vagas de Emprego -->
       </div>
     </div>
     <!-- Fim TABS DICAS DO NERD -->
   </div>
+
+    <!-- Barra de divisão de conteúdo -->
+    <div class="container">
+        <hr class="featurette-divider">
+      </div>
+      <!-- Fim Barra de divisão de conteúdo -->
 
 
   <div class="container-fluid banner-visual-code d-flex justify-content-center">
@@ -193,11 +256,13 @@
         <div class="form-group">
           <div class="form-group">
             <!-- <label for="formGroupExampleInput">Nome</label> -->
-            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Por favor digite seu nome completo">
+            <input type="text" class="form-control" id="formGroupExampleInput"
+              placeholder="Por favor digite seu nome completo">
           </div>
           <div class="form-group">
             <!-- <label for="formGroupExampleInput">Email</label> -->
-            <input type="email" class="form-control" id="formGroupExampleInput" placeholder="Por favor digite seu email">
+            <input type="email" class="form-control" id="formGroupExampleInput"
+              placeholder="Por favor digite seu email">
           </div>
           <div class="form-group">
             <!-- <label for="formGroupExampleInput2">Telefone / WhatsApp</label> -->
