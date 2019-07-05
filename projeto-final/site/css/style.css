@@ -22,3 +22,10 @@ a {
     padding: 15px 30px;
     border-radius: 50px;
 }
+
+
+/* Banners */
+.banner-visual-code {
+    padding-top: 30px;
+    background-color: #362E7B;
+}
