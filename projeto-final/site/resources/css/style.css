@@ -32,19 +32,19 @@
   
   /* Slider 01 */
   .carousel-item.slider-01 {
-    background: linear-gradient(rgba(86, 61, 124, 0.8), rgba(0, 0, 0, 0.9)), url(bg-sliders-topo.jpg) no-repeat fixed 50% 50%;
+    background: linear-gradient(rgba(86, 61, 124, 1), rgba(0, 0, 0, 0.9)), url(bg-sliders-topo.jpg) no-repeat fixed 50% 50%;
     background-size: cover;
   }
   
   /* Slider 02 */
   .carousel-item.slider-02 {
-    background: linear-gradient(rgba(50, 127, 199, 0.8), rgba(0, 0, 0, 0.9)), url(bg-sliders-topo.jpg) no-repeat fixed 50% 50%;
+    background: linear-gradient(rgba(50, 127, 199, 1), rgba(0, 0, 0, 0.9)), url(bg-sliders-topo.jpg) no-repeat fixed 50% 50%;
     background-size: cover;
   }
   
   /* Slider 03 */
   .carousel-item.slider-03 {
-    background: linear-gradient(rgba(2, 110, 0, 0.8), rgba(0, 0, 0, 0.9)), url(bg-sliders-topo.jpg) no-repeat fixed 50% 50%;
+    background: linear-gradient(rgba(2, 110, 0, 1), rgba(0, 0, 0, 0.9)), url(bg-sliders-topo.jpg) no-repeat fixed 50% 50%;
     background-size: cover; 
   }
 
