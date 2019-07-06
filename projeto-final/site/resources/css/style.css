@@ -1,0 +1,54 @@
+/*
+  #   Projeto final - Disciplina: "Desenvolvimento Web para Dispositivos Móveis"
+  #   Faculdade Senac Porto Alegre - RS
+  #   Aluno: Marcelo Pereira da Silva
+  #   Matrícula: 631110033
+*/
+
+
+a {
+    color: #17A2B8;
+}
+.display-4 {
+    font-size: 1.5rem;
+}
+
+
+/* Seção Contato */
+.form-control {
+    padding: 25px;
+    border-radius: 50px;
+}
+
+/* Input text-area */
+.area {
+    border-radius: 15px;
+}
+
+
+/* BOTÕES */
+
+/* Botões Actions - Slider */
+.btn-lg {
+    padding: .5rem 3rem;
+    font-size: 1.25rem;
+    line-height: 1.8;
+    border-radius: 2rem;
+    margin-top: 30px;
+    text-transform: uppercase;
+}
+
+.btn-lg:hover { color: #343a40; }
+
+/* Botão formulário de contato */
+.btn-dark {
+    padding: 15px 30px;
+    border-radius: 50px;
+}
+
+
+/* Banners */
+.banner-visual-code {
+    padding-top: 30px;
+    background-color: #362E7B;
+}
