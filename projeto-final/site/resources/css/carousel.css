@@ -23,16 +23,35 @@
 
 /* Declare heights because of positioning of img element */
 .carousel-item {
-  /* height: 32rem; */
+  /* height: 32rem; */ /* Altura original*/
   height: 30rem;
 }
-.carousel-item > img {
+
+/* Slider 01 */
+.carousel-item.slider-01 {
+  background: linear-gradient(rgba(86, 61, 124, 0.8), rgba(0, 0, 0, 0.9)), url(bg-sliders-topo.jpg) no-repeat fixed 50% 50%;
+  background-size: cover;
+}
+
+/* Slider 02 */
+.carousel-item.slider-02 {
+  background: linear-gradient(rgba(50, 127, 199, 0.8), rgba(0, 0, 0, 0.9)), url(bg-sliders-topo.jpg) no-repeat fixed 50% 50%;
+  background-size: cover;
+}
+
+/* Slider 03 */
+.carousel-item.slider-03 {
+  background: linear-gradient(rgba(2, 110, 0, 0.8), rgba(0, 0, 0, 0.9)), url(bg-sliders-topo.jpg) no-repeat fixed 50% 50%;
+  background-size: cover; 
+}
+
+/* .carousel-item > img {
   position: absolute;
   top: 0;
   left: 0;
   min-width: 100%;
-  height: 25rem;
-}
+  height: 90vh;
+} */
 
 
 
