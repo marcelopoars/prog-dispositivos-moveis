@@ -6,27 +6,70 @@
 */
 
 
+
+/***************************
+  Carousel principal topo
+****************************/
+
+.carousel {
+    margin-bottom: 2rem;
+  }
+  
+  .carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+  }
+  
+  .carousel-caption i {
+    font-size: 5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .carousel-item {
+    /* height: 32rem; */ /* Altura original*/
+    height: 30rem;
+  }
+  
+  /* Slider 01 */
+  .carousel-item.slider-01 {
+    background: linear-gradient(rgba(86, 61, 124, 0.8), rgba(0, 0, 0, 0.9)), url(bg-sliders-topo.jpg) no-repeat fixed 50% 50%;
+    background-size: cover;
+  }
+  
+  /* Slider 02 */
+  .carousel-item.slider-02 {
+    background: linear-gradient(rgba(50, 127, 199, 0.8), rgba(0, 0, 0, 0.9)), url(bg-sliders-topo.jpg) no-repeat fixed 50% 50%;
+    background-size: cover;
+  }
+  
+  /* Slider 03 */
+  .carousel-item.slider-03 {
+    background: linear-gradient(rgba(2, 110, 0, 0.8), rgba(0, 0, 0, 0.9)), url(bg-sliders-topo.jpg) no-repeat fixed 50% 50%;
+    background-size: cover; 
+  }
+
+
+
+/***************************
+  Linha divisória de seções
+****************************/
+
+.featurette-divider {
+    margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+  }
+
+  
+/***************************
+  Links
+****************************/
 a {
     color: #17A2B8;
 }
-.display-4 {
-    font-size: 1.5rem;
-}
 
 
-/* Seção Contato */
-.form-control {
-    padding: 25px;
-    border-radius: 50px;
-}
-
-/* Input text-area */
-.area {
-    border-radius: 15px;
-}
-
-
-/* BOTÕES */
+/***************************
+  Botões
+****************************/
 
 /* Botões Actions - Slider */
 .btn-lg {
@@ -40,14 +83,47 @@ a {
 
 .btn-lg:hover { color: #343a40; }
 
+
+/***************************
+  Headers
+****************************/
+.display-4 {
+    font-size: 1.5rem;
+}
+
+
+/***************************
+  Seção Contato
+****************************/
+
+.form-control {
+    padding: 25px;
+    border-radius: 50px;
+}
+
+/* Input text-area */
+.area {
+    border-radius: 15px;
+}
+
 /* Botão formulário de contato */
 .btn-dark {
     padding: 15px 30px;
     border-radius: 50px;
 }
 
+.list-group i {
+    font-size: 1.6rem;
+    color: #17A2B8;
+}
 
-/* Banners */
+.badge-pill {
+    background-color: #FFF;
+}
+
+/***************************
+  Banner Visual Code
+****************************/
 .banner-visual-code {
     padding-top: 30px;
     background-color: #362E7B;
