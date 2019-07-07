@@ -70,6 +70,9 @@ a {
   Botões
 ****************************/
 
+.btn {
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+}
 /* Botões Actions - Slider */
 .btn-lg {
     padding: .5rem 3rem;
