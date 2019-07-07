@@ -100,8 +100,23 @@ a {
 }
 
 .card img {
-    
+    width: 150px;
 }
+
+.avaliacao-extensao {
+    margin-bottom: 20px;
+}
+
+.avaliacao-extensao i {
+    margin-right: 10px;
+    color: orangered;
+}
+
+.flickity-prev-next-button {
+    right: 10px;
+    color: #17A2B8;
+}
+
 
 
 /***************************
