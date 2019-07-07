@@ -99,35 +99,20 @@ a {
 }
 
 
-.carousel-cell {
-    margin-right: 20px;
-}
+/***************************
+  Carousel - Seção Extnsõe par Visual Code
+****************************/
 
-.card {
-    align-items: center;
-}
-
-.card img {
-    width: 120px;
-}
-
-.card-body {
-    padding: 10px 20px;
-}
-
-.avaliacao-extensao {
-    margin-bottom: 20px;
-}
-
-.avaliacao-extensao i {
-    margin-right: 10px;
-    color: orangered;
-}
-
-.flickity-prev-next-button {
-    right: 10px;
-    color: #17A2B8;
-}
+.carousel-cell { margin-right: 20px; }
+.card { align-items: center; }
+.card img { width: 120px; }
+.card-body { padding: 0 20 px20px; }
+.avaliacao-extensao { margin-bottom: 10px; }
+.avaliacao-extensao i { margin-right: 10px; margin-bottom: 10px; }
+.fa-star, .fa-star-half-alt { color: orangered; }
+.empty { color: #666; }
+.fa-cloud-download-alt { color: #666; }
+.flickity-prev-next-button { right: 10px; color: #17A2B8; }
 
 
 
