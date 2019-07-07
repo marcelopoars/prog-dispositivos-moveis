@@ -80,7 +80,15 @@ a {
     text-transform: uppercase;
 }
 
-.btn-lg:hover { color: #343a40; }
+.btn-lg:hover { 
+    color: #343a40; 
+}
+
+/* Botão formulário de contato */
+.btn-dark, .btn-info {
+    padding: 10px 25px;
+    border-radius: 50px;
+}
 
 
 /***************************
@@ -100,7 +108,11 @@ a {
 }
 
 .card img {
-    width: 150px;
+    width: 120px;
+}
+
+.card-body {
+    padding: 10px 20px;
 }
 
 .avaliacao-extensao {
@@ -131,12 +143,6 @@ a {
 /* Input text-area */
 .area {
     border-radius: 15px;
-}
-
-/* Botão formulário de contato */
-.btn-dark {
-    padding: 15px 30px;
-    border-radius: 50px;
 }
 
 .list-group i {
