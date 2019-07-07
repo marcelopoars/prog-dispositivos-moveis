@@ -12,6 +12,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Flickity -->
+  <link rel="stylesheet" href="vendors/flickity/css/flickity.min.css">
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css">
   <!-- Ícones -->
@@ -51,7 +53,7 @@
     </div><!-- Fim Navbar -->
   </nav>
 
-  <!-- Carousel -->
+  <!-- Carousel Topo -->
   <div id="carouselTopo" class="carousel slide" data-ride="carousel">
 
     <ol class="carousel-indicators">
@@ -69,7 +71,8 @@
             <i class="fab fa-bootstrap"></i>
             <h1><strong>Bootstrap</strong></h1>
             <h3 class="display-4">Conheça a biblioteca de componentes front-end mais popular do mundo.</h3>
-            <p><a class="btn btn-lg btn-outline-light" href="https://getbootstrap.com/" target="_blank" role="button">Saiba mais</a></p>
+            <p><a class="btn btn-lg btn-outline-light" href="https://getbootstrap.com/" target="_blank"
+                role="button">Saiba mais</a></p>
           </div>
         </div>
       </div>
@@ -82,7 +85,8 @@
             <i class="fab fa-github"></i>
             <h1><strong>GitHub</strong> Pages</h1>
             <h3 class="display-4">Hospedade seu site diretamente do seu repositório GitHub.</h3>
-            <p><a class="btn btn-lg btn-outline-light" href="https://pages.github.com/" target="_blank" role="button">Saiba mais</a></p>
+            <p><a class="btn btn-lg btn-outline-light" href="https://pages.github.com/" target="_blank"
+                role="button">Saiba mais</a></p>
           </div>
         </div>
       </div>
@@ -95,7 +99,8 @@
             <i class="fab fa-node-js"></i>
             <h1><strong>Node</strong>.js</h1>
             <h3 class="display-4">Entenda como funciona ambiente de execução Javascript server-side.</h3>
-            <p><a class="btn btn-lg btn-outline-light" href="https://nodejs.org/en/" target="_blank" role="button">Saiba mais</a></p>
+            <p><a class="btn btn-lg btn-outline-light" href="https://nodejs.org/en/" target="_blank" role="button">Saiba
+                mais</a></p>
           </div>
         </div>
       </div>
@@ -103,15 +108,15 @@
 
     <a class="carousel-control-prev" href="#carouselTopo" role="button" data-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
+      <span class="sr-only">Anterior</span>
     </a>
     <a class="carousel-control-next" href="#carouselTopo" role="button" data-slide="next">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
+      <span class="sr-only">Próximo</span>
     </a>
 
   </div>
-  <!-- Fim carousel -->
+  <!-- Fim carousel Topo -->
 
 
   <!-- Seção BUSCA NO SITE -->
@@ -122,14 +127,102 @@
   </div>
   <!-- Fim Seção BUSCA NO SITE -->
 
+  <!-- Extenões para Visual Code -->
   <div class="container my-5">
-    <h3 class="display-4">Plugins para Visual Code</h3>
-    <p class="lead">Confira aqui a lista de plugins mais populares para o editor <strong>Visual Code</strong>.</p>
-    <img
-      src="https://ms-python.gallerycdn.vsassets.io/extensions/ms-python/python/2019.6.22090/1561490512517/Microsoft.VisualStudio.Services.Icons.Small"
-      alt="">
-    <img src="images/spotfy.webp" alt="">
+    <h3 class="display-4">Extensões para Visual Code</h3>
+    <p class="lead">Confira aqui a lista de extensões mais populares para o editor <strong>Visual Code</strong>.</p>
+
+    <!-- Carousel -->
+    <div class="carousel my-5" data-flickity='{ "wrapAround": false, "groupCells": true }'>
+
+      <div class="carousel-cell">
+        <!-- Card 01 -->
+        <div class="card" style="width: 18rem;">
+          <img src="https://ritwickdey.gallerycdn.vsassets.io/extensions/ritwickdey/liveserver/5.6.1/1555497731217/Microsoft.VisualStudio.Services.Icons.Default" alt="Live Server">
+          <div class="card-body">
+            <h5 class="card-title">Live Server</h5>
+            <p class="card-text">Servidor local de desenvolvimento com recurso de recarga ao vivo para páginas estáticas e dinâmicas.</p>
+            <a href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer" class="btn btn-info">Baixar extensão</a>
+          </div>
+        </div>
+        <!-- Fim Card 0 -->
+      </div>
+
+      <div class="carousel-cell">
+        <!-- Card 02 -->
+        <div class="card" style="width: 18rem;">
+          <img src="https://formulahendry.gallerycdn.vsassets.io/extensions/formulahendry/auto-rename-tag/0.1.0/1559468613066/Microsoft.VisualStudio.Services.Icons.Default" alt="Auto Rename Tag">
+          <div class="card-body">
+            <h5 class="card-title">Auto Rename Tag</h5>
+            <p class="card-text">Renomeie automaticamente a tag HTML / XML pareada, da mesma forma que o Visual Studio IDE.</p>
+            <a href="https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag" class="btn btn-info">Baixar extensão</a>
+          </div>
+        </div>
+        <!-- Fim Card 02 -->
+      </div>
+
+      <div class="carousel-cell">
+        <!-- Card 03 -->
+        <div class="card" style="width: 18rem;">
+          <img src="resources/images/extensoes/python.png" alt="">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <a href="#" class="btn btn-info">Baixar extensão</a>
+          </div>
+        </div>
+        <!-- Fim Card 03 -->
+      </div>
+
+      <div class="carousel-cell">
+        <!-- Card 04 -->
+        <div class="card" style="width: 18rem;">
+          <img src="resources/images/extensoes/python.png" alt="">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <a href="#" class="btn btn-info">Baixar extensão</a>
+          </div>
+        </div>
+        <!-- Fim Card 04 -->
+      </div>
+
+      <div class="carousel-cell">
+        <!-- Card 05 -->
+        <div class="card" style="width: 18rem;">
+          <img src="resources/images/extensoes/python.png" alt="">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <a href="#" class="btn btn-info">Baixar extensão</a>
+          </div>
+        </div>
+        <!-- Fim Card 05 -->
+      </div>
+
+      <div class="carousel-cell">
+        <!-- Card 06 -->
+        <div class="card" style="width: 18rem;">
+          <img src="resources/images/extensoes/python.png" alt="">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <a href="#" class="btn btn-info">Baixar extensão</a>
+          </div>
+        </div>
+        <!-- Fim Card 06 -->
+      </div>
+
+    </div>
+    <!-- Fim Carousel -->
+
   </div>
+  <!-- Fim Extenões para Visual Code -->
+
 
   <!-- Barra de divisão de conteúdo -->
   <div class="container">
@@ -299,6 +392,7 @@
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="vendors/flickity/js/flickity.pkgd.min.js"></script>
 </body>
 
 </html>
