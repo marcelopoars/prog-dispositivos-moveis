@@ -8,671 +8,753 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-  <!-- Header -->
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- Flickity -->
-    <link rel="stylesheet" href="vendors/flickity/css/flickity.min.css">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css">
-    <!-- Ícones -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
-    <!-- Estilos CSS -->
-    <link rel="stylesheet" href="resources/css/style.css">
-    <title>Dica do Nerd</title>
-  </head>
-  <!-- Fim Header -->
+<!-- Header -->
 
-  <body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Flickity -->
+  <link rel="stylesheet" href="vendors/flickity/css/flickity.min.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css">
+  <!-- Ícones -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+  <!-- Estilos CSS -->
+  <link rel="stylesheet" href="resources/css/style.css">
+  <title>Dica do Nerd</title>
+</head>
+<!-- Fim Header -->
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">Dica do <strong>Nerd</strong></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
-          style="outline: none">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+<body>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto text-center">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Blog <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Carreira</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Cursos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Eventos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contato</a>
-            </li>
-
-            <!-- Link Login -->
-            <li class="nav-item">
-              <button class="btn btn-info px-3 py-2"><i class="fab fa-github"></i> Entrar</button>
-            </li>
-            <!-- Fim Link Login -->
-
-          </ul>
-        </div>
-      </div><!-- Fim Navbar -->
-    </nav>
-
-    <!-- Carousel Topo -->
-    <div id="carouselTopo" class="carousel slide" data-ride="carousel">
-
-      <ol class="carousel-indicators">
-        <li data-target="#carouselTopo" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselTopo" data-slide-to="1"></li>
-        <li data-target="#carouselTopo" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner">
-        <div class="carousel-item slider-01 active">
-          <div class="container">
-            <div class="carousel-caption">
-              <i class="fab fa-bootstrap"></i>
-              <h1><strong>Bootstrap</strong></h1>
-              <h3 class="display-4">Conheça a biblioteca de componentes front-end mais popular do mundo.</h3>
-              <p><a class="btn btn-lg btn-outline-light" href="https://getbootstrap.com/" target="_blank"
-                  role="button">Saiba mais</a></p>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item slider-02">
-          <div class="container">
-            <div class="carousel-caption">
-              <i class="fab fa-github"></i>
-              <h1><strong>GitHub</strong> Pages</h1>
-              <h3 class="display-4">Hospedade seu site diretamente do seu repositório GitHub.</h3>
-              <p><a class="btn btn-lg btn-outline-light" href="https://pages.github.com/" target="_blank"
-                  role="button">Saiba mais</a></p>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item slider-03">
-          <div class="container">
-            <div class="carousel-caption">
-              <i class="fab fa-node-js"></i>
-              <h1><strong>Node</strong>.js</h1>
-              <h3 class="display-4">Entenda como funciona ambiente de execução Javascript server-side.</h3>
-              <p><a class="btn btn-lg btn-outline-light" href="https://nodejs.org/en/" target="_blank" role="button">Saiba
-                  mais</a></p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <a class="carousel-control-prev" href="#carouselTopo" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Anterior</span>
-      </a>
-      <a class="carousel-control-next" href="#carouselTopo" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Próximo</span>
-      </a>
-
-    </div>
-    <!-- Fim carousel Topo -->
-
-
-    <!-- Seção BUSCA NO SITE -->
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow">
     <div class="container">
-      <form class="form-goup my-3 my-lg-4 d-flex justify-content-center">
-        <input class="form-control col-lg-12" type="search" placeholder="Buscar no site" aria-label="Buscar no site">
-      </form>
-    </div>
-    <!-- Fim Seção BUSCA NO SITE -->
+      <a class="navbar-brand" href="index.html">Dica do <strong>Nerd</strong></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+        style="outline: none">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto text-center">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Blog <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Carreira</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Cursos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Eventos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contato</a>
+          </li>
 
-    <!-- Extenões para Visual Code -->
-    <div class="container my-5">
+          <!-- Link Login -->
+          <li class="nav-item">
+            <button class="btn btn-info px-3 py-2"><i class="fab fa-github"></i> Entrar</button>
+          </li>
+          <!-- Fim Link Login -->
 
-      <!-- Título da seção -->
-      <h2 class="my-2">Extensões <small>para Visual Code</small></h2>
-      <p class="lead">Confira aqui a lista de extensões mais populares para o editor <strong>Visual Code</strong>.</p>
-
-      <!-- Carousel -->
-      <div class="carousel my-5" data-flickity='{ "wrapAround": true, "groupCells": true }'>
-
-        <div class="carousel-cell">
-          <!-- Card 01 -->
-          <div class="card" style="width: 18rem;">
-            <img src="resources/images/extensoes/live-server.png" alt="Extensão para Visual Studio Code - Live Server">
-            <div class="card-body">
-              <h5 class="card-title">Live Server</h5>
-              <p class="card-text">Servidor local com recurso de recarga ao vivo para páginas estáticas
-                e dinâmicas.</p>
-              <div class="avaliacao-extensao">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star-half-alt"></i>(185) <br>
-                <i class="fas fa-cloud-download-alt"></i> 4.959.763 downloads
-              </div>
-              <a href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer" target="_blank"
-                class="btn btn-info">Baixar extensão</a>
-            </div>
-          </div>
-          <!-- Fim Card 01 -->
-        </div>
-
-        <div class="carousel-cell">
-          <!-- Card 02 -->
-          <div class="card" style="width: 18rem;">
-            <img src="resources/images/extensoes/auto-tag-rename.png"
-              alt="Extensão para Visual Studio Code - Auto Rename Tag">
-            <div class="card-body">
-              <h5 class="card-title">Auto Rename Tag</h5>
-              <p class="card-text">Renomeie automaticamente a tag HTML / XML pareada, da mesma forma que o Visual Studio
-                IDE.</p>
-              <div class="avaliacao-extensao">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star-half-alt"></i>
-                <i class="fas fa-star empty"></i>(76) <br>
-                <i class="fas fa-cloud-download-alt"></i>2.237.160 downloads
-              </div>
-              <a href="https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag" target="_blank"
-                class="btn btn-info">Baixar extensão</a>
-            </div>
-          </div>
-          <!-- Fim Card 02 -->
-        </div>
-
-        <div class="carousel-cell">
-          <!-- Card 03 -->
-          <div class="card" style="width: 18rem;">
-            <img src="resources/images/extensoes/python.png" alt="Extensão para Visual Studio Code - Python">
-            <div class="card-body">
-              <h5 class="card-title">Python</h5>
-              <p class="card-text">Uma extensão do Visual Studio Code com suporte avançado à linguagem Python.</p>
-              <div class="avaliacao-extensao">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star-half-alt"></i>(256) <br>
-                <i class="fas fa-cloud-download-alt"></i>52.957.502 downloads
-              </div>
-              <a href="https://marketplace.visualstudio.com/items?itemName=ms-python.python" target="_blank"
-                class="btn btn-info">Baixar extensão</a>
-            </div>
-          </div>
-          <!-- Fim Card 03 -->
-        </div>
-
-        <div class="carousel-cell">
-          <!-- Card 04 -->
-          <div class="card" style="width: 18rem;">
-            <img src="resources/images/extensoes/material-icon-theme.png"
-              alt="Extensão para Visual Studio Code - Material Icon Theme">
-            <div class="card-body">
-              <h5 class="card-title">Material Icon Theme</h5>
-              <p class="card-text">Fornece muitos ícones baseados em Material Design para o Visual Studio Code.</p>
-              <div class="avaliacao-extensao">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>(102) <br>
-                <i class="fas fa-cloud-download-alt"></i>7.758.808 downloads
-              </div>
-              <a href="https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme" target="_blank"
-                class="btn btn-info">Baixar extensão</a>
-            </div>
-          </div>
-          <!-- Fim Card 04 -->
-        </div>
-
-        <div class="carousel-cell">
-          <!-- Card 05 -->
-          <div class="card" style="width: 18rem;">
-            <img src="resources/images/extensoes/debugger-for-chrome.png"
-              alt="Extensão para Visual Studio Code - Debugger for Chrome">
-            <div class="card-body">
-              <h5 class="card-title">Debugger for Chrome</h5>
-              <p class="card-text">Depure seu código JavaScript em execução no Google Chrome a partir do VS Code.</p>
-              <div class="avaliacao-extensao">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star empty"></i>(115) <br>
-                <i class="fas fa-cloud-download-alt"></i>20.425.957 downloads
-              </div>
-              <a href="https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome" target="_blank"
-                class="btn btn-info">Baixar extensão</a>
-            </div>
-          </div>
-          <!-- Fim Card 05 -->
-        </div>
-
-        <div class="carousel-cell">
-          <!-- Card 06 -->
-          <div class="card" style="width: 18rem;">
-            <img src="resources/images/extensoes/sass.png" alt="Extensão para Visual Studio Code - Sass">
-            <div class="card-body">
-              <h5 class="card-title">Sass</h5>
-              <p class="card-text">Realce de sintaxe recortada do Sass, autocomplete e snippets para VSCode.</p>
-              <div class="avaliacao-extensao">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i></i>(130) <br>
-                <i class="fas fa-cloud-download-alt"></i>1.439.192 downloads
-              </div>
-              <a href="https://marketplace.visualstudio.com/items?itemName=robinbentley.sass-indented" target="_blank"
-                class="btn btn-info">Baixar extensão</a>
-            </div>
-          </div>
-          <!-- Fim Card 06 -->
-        </div>
-
+        </ul>
       </div>
-      <!-- Fim Carousel -->
-
     </div>
-    <!-- Fim Extenões para Visual Code -->
+  </nav>
+  <!-- Fim Navbar -->
 
+  <!-- Carousel Topo -->
+  <div id="carouselTopo" class="carousel slide" data-ride="carousel">
 
-    <!-- Barra de divisão de conteúdo -->
-    <div class="container">
-      <hr class="featurette-divider">
-    </div>
-    <!-- Fim Barra de divisão de conteúdo -->
-
-
-    <!-- Seção Frameworks para Front-end -->
-    <div class="container my-5">
-
-      <!-- Título da seção -->
-      <h2 class="my-2">Frameworks<small> Front-end</small></h2>
-      <p class="lead mb-5">Confira aqui a lista de frameworks para desenvolvimento front-end.</p>
-
-      <!-- Linha com duas colunas -->
-      <div class="row d-flex flex-wrap">
-
-        <!-- Framework 01 -->
-        <div class="col-md-6 mb-5">
-          <div class="col-md-12 p-0">
-            <a href="#">
-              <img class="img-fluid rounded shadow " src="resources/images/frameworks/react-js.jpg"
-                alt="React Framework Front-end">
-            </a>
-          </div>
-          <div class="col-md-12 p-0">
-            <h3 class="my-3">React</h3>
-            <p>React é o framework de front-end criado e desenvolvido pelo Facebook. A equipe estava interessada em obter
-              alto desempenho criando uma interface do usuário eficaz. Jordan Walke propôs criar a biblioteca baseada na
-              combinação XHP e JavaScript em 2011.</p>
-            <a class="btn btn-info" href="https://pt-br.reactjs.org/" target="_blank">Visitar o site</a>
+    <ol class="carousel-indicators">
+      <li data-target="#carouselTopo" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselTopo" data-slide-to="1"></li>
+      <li data-target="#carouselTopo" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item slider-01 active">
+        <div class="container">
+          <div class="carousel-caption">
+            <i class="fab fa-bootstrap"></i>
+            <h1><strong>Bootstrap</strong></h1>
+            <h3 class="display-4">Conheça a biblioteca de componentes front-end mais popular do mundo.</h3>
+            <p><a class="btn btn-lg btn-outline-light" href="https://getbootstrap.com/" target="_blank"
+                role="button">Saiba mais</a></p>
           </div>
         </div>
-        <!-- Fim Framework 01 -->
-
-        <!-- Framework 02 -->
-        <div class="col-md-6 mb-5">
-          <div class="col-md-12 p-0">
-            <a href="#">
-              <img class="img-fluid rounded shadow" src="resources/images/frameworks/vue-js.jpg"
-                alt="Vue.js Framework Front-end">
-            </a>
-          </div>
-          <div class="col-md-12 p-0">
-            <h3 class="my-3">Vue.js</h3>
-            <p>O Vue.js é o framework da web para construir interfaces de usuários. É uma ferramenta independente que cria
-              interfaces web e não requer a extensão adicional. O Vue.js foi criado por Evan You e lançado inicialmente em
-              fevereiro de 2014. </p>
-            <a class="btn btn-info" href="https://br.vuejs.org/index.html" target="_blank">Visitar o site</a>
-          </div>
-        </div>
-        <!-- Framework 02 -->
-
-        <!-- Framework 03 -->
-        <div class="col-md-6 mb-5">
-          <div class="col-md-12 p-0">
-            <a href="#">
-              <img class="img-fluid rounded shadow" src="resources/images/frameworks/angular-js.jpg"
-                alt="Angular Framework Front-end">
-            </a>
-          </div>
-          <div class="col-md-12 p-0">
-            <h3 class="my-3">Angular</h3>
-            <p>AngularJS é um framework JavaScript código aberto, mantido pelo Google, que auxilia na execução de
-              single-page applications. Seu objetivo é aumentar aplicativos que podem ser acessados por um navegador web.
-            </p>
-            <a class="btn btn-info" href="https://angular.io/" target="_blank">Visitar o site</a>
-          </div>
-        </div>
-        <!-- Fim Framework 03 -->
-
-        <!-- Framework 04 -->
-        <div class="col-md-6 mb-5">
-          <div class="col-md-12 p-0">
-            <a href="#">
-              <img class="img-fluid rounded shadow" src="resources/images/frameworks/materialize.jpg"
-                alt="Materialize Framework Front-end">
-            </a>
-          </div>
-          <div class="col-md-12 p-0">
-            <h3 class="my-3">Materialize</h3>
-            <p>Um moderno framework baseado em Material Design do Google, tecnologia que foca na simplicidade para a
-              indicação de como criar interfaces de usuário modernas.</p>
-            <a class="btn btn-info" href="https://materializecss.com/" target="_blank">Visitar o site</a>
-          </div>
-        </div>
-        <!-- Framework 04 -->
       </div>
-      <!-- Fim Linha com duas colunas -->
+      <div class="carousel-item slider-02">
+        <div class="container">
+          <div class="carousel-caption">
+            <i class="fab fa-github"></i>
+            <h1><strong>GitHub</strong> Pages</h1>
+            <h3 class="display-4">Hospedade seu site diretamente do seu repositório GitHub.</h3>
+            <p><a class="btn btn-lg btn-outline-light" href="https://pages.github.com/" target="_blank"
+                role="button">Saiba mais</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item slider-03">
+        <div class="container">
+          <div class="carousel-caption">
+            <i class="fab fa-node-js"></i>
+            <h1><strong>Node</strong>.js</h1>
+            <h3 class="display-4">Entenda como funciona ambiente de execução Javascript server-side.</h3>
+            <p><a class="btn btn-lg btn-outline-light" href="https://nodejs.org/en/" target="_blank" role="button">Saiba
+                mais</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <a class="carousel-control-prev" href="#carouselTopo" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Anterior</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselTopo" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Próximo</span>
+    </a>
+
+  </div>
+  <!-- Fim carousel Topo -->
+
+
+  <!-- Seção BUSCA NO SITE -->
+  <div class="container">
+    <form class="form-goup my-3 my-lg-4 d-flex justify-content-center">
+      <input class="form-control col-lg-12" type="search" placeholder="Buscar no site" aria-label="Buscar no site">
+    </form>
+  </div>
+  <!-- Fim Seção BUSCA NO SITE -->
+
+
+  <!-- Extenões para Visual Code -->
+  <div class="container my-5">
+
+    <!-- Título da seção -->
+    <h2 class="my-2">Extensões <small>para Visual Code</small></h2>
+    <p class="lead">Confira aqui a lista de extensões mais populares para o editor <strong>Visual Code</strong>.</p>
+
+    <!-- Carousel -->
+    <div class="carousel my-5" data-flickity='{ "wrapAround": true, "groupCells": true }'>
+
+      <div class="carousel-cell">
+        <!-- Card 01 -->
+        <div class="card" style="width: 18rem;">
+          <img src="resources/images/extensoes/live-server.png" alt="Extensão para Visual Studio Code - Live Server">
+          <div class="card-body">
+            <h5 class="card-title">Live Server</h5>
+            <p class="card-text">Servidor local com recurso de recarga ao vivo para páginas estáticas
+              e dinâmicas.</p>
+            <div class="avaliacao-extensao">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>(185) <br>
+              <i class="fas fa-cloud-download-alt"></i> 4.959.763 downloads
+            </div>
+            <a href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer" target="_blank"
+              class="btn btn-info">Baixar extensão</a>
+          </div>
+        </div>
+        <!-- Fim Card 01 -->
+      </div>
+
+      <div class="carousel-cell">
+        <!-- Card 02 -->
+        <div class="card" style="width: 18rem;">
+          <img src="resources/images/extensoes/auto-tag-rename.png"
+            alt="Extensão para Visual Studio Code - Auto Rename Tag">
+          <div class="card-body">
+            <h5 class="card-title">Auto Rename Tag</h5>
+            <p class="card-text">Renomeie automaticamente a tag HTML / XML pareada, da mesma forma que o Visual Studio
+              IDE.</p>
+            <div class="avaliacao-extensao">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+              <i class="fas fa-star empty"></i>(76) <br>
+              <i class="fas fa-cloud-download-alt"></i>2.237.160 downloads
+            </div>
+            <a href="https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag" target="_blank"
+              class="btn btn-info">Baixar extensão</a>
+          </div>
+        </div>
+        <!-- Fim Card 02 -->
+      </div>
+
+      <div class="carousel-cell">
+        <!-- Card 03 -->
+        <div class="card" style="width: 18rem;">
+          <img src="resources/images/extensoes/python.png" alt="Extensão para Visual Studio Code - Python">
+          <div class="card-body">
+            <h5 class="card-title">Python</h5>
+            <p class="card-text">Uma extensão do Visual Studio Code com suporte avançado à linguagem Python.</p>
+            <div class="avaliacao-extensao">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>(256) <br>
+              <i class="fas fa-cloud-download-alt"></i>52.957.502 downloads
+            </div>
+            <a href="https://marketplace.visualstudio.com/items?itemName=ms-python.python" target="_blank"
+              class="btn btn-info">Baixar extensão</a>
+          </div>
+        </div>
+        <!-- Fim Card 03 -->
+      </div>
+
+      <div class="carousel-cell">
+        <!-- Card 04 -->
+        <div class="card" style="width: 18rem;">
+          <img src="resources/images/extensoes/material-icon-theme.png"
+            alt="Extensão para Visual Studio Code - Material Icon Theme">
+          <div class="card-body">
+            <h5 class="card-title">Material Icon Theme</h5>
+            <p class="card-text">Fornece muitos ícones baseados em Material Design para o Visual Studio Code.</p>
+            <div class="avaliacao-extensao">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>(102) <br>
+              <i class="fas fa-cloud-download-alt"></i>7.758.808 downloads
+            </div>
+            <a href="https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme" target="_blank"
+              class="btn btn-info">Baixar extensão</a>
+          </div>
+        </div>
+        <!-- Fim Card 04 -->
+      </div>
+
+      <div class="carousel-cell">
+        <!-- Card 05 -->
+        <div class="card" style="width: 18rem;">
+          <img src="resources/images/extensoes/debugger-for-chrome.png"
+            alt="Extensão para Visual Studio Code - Debugger for Chrome">
+          <div class="card-body">
+            <h5 class="card-title">Debugger for Chrome</h5>
+            <p class="card-text">Depure seu código JavaScript em execução no Google Chrome a partir do VS Code.</p>
+            <div class="avaliacao-extensao">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star empty"></i>(115) <br>
+              <i class="fas fa-cloud-download-alt"></i>20.425.957 downloads
+            </div>
+            <a href="https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome" target="_blank"
+              class="btn btn-info">Baixar extensão</a>
+          </div>
+        </div>
+        <!-- Fim Card 05 -->
+      </div>
+
+      <div class="carousel-cell">
+        <!-- Card 06 -->
+        <div class="card" style="width: 18rem;">
+          <img src="resources/images/extensoes/sass.png" alt="Extensão para Visual Studio Code - Sass">
+          <div class="card-body">
+            <h5 class="card-title">Sass</h5>
+            <p class="card-text">Realce de sintaxe recortada do Sass, autocomplete e snippets para VSCode.</p>
+            <div class="avaliacao-extensao">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i></i>(130) <br>
+              <i class="fas fa-cloud-download-alt"></i>1.439.192 downloads
+            </div>
+            <a href="https://marketplace.visualstudio.com/items?itemName=robinbentley.sass-indented" target="_blank"
+              class="btn btn-info">Baixar extensão</a>
+          </div>
+        </div>
+        <!-- Fim Card 06 -->
+      </div>
 
     </div>
-    <!-- Fim Seção Frameworks para Front-end -->
+    <!-- Fim Carousel -->
+
+  </div>
+  <!-- Fim Extenões para Visual Code -->
 
 
-    <!-- Seção Banner Visual Studio Code -->
-    <div class="container-fluid d-flex flex-wrap justify-content-between align-items-center banner-visual-code text-white py-5">
+  <!-- Barra de divisão de conteúdo -->
+  <div class="container">
+    <hr class="featurette-divider">
+  </div>
+  <!-- Fim Barra de divisão de conteúdo -->
 
-      <!-- Box de Texto -->
-      <div class="col-lg-5 text-center mb-5">
-        <h2>Destaque<small> em 2019</small></h2>
-        <p>O Visual Studio Code é um editor de código-fonte leve, mas poderoso, que é executado em sua área de trabalho e está disponível para Windows, macOS e Linux.</p>
-        <a class="btn btn-lg btn-success mt-2" href="https://getbootstrap.com/" target="_blank" role="button">Visite o site</a>
+
+  <!-- Seção Frameworks para Front-end -->
+  <div class="container my-5">
+
+    <!-- Título da seção -->
+    <h2 class="my-2">Frameworks<small> Front-end</small></h2>
+    <p class="lead mb-5">Confira aqui a lista de frameworks para desenvolvimento front-end.</p>
+
+    <!-- Linha com duas colunas -->
+    <div class="row d-flex flex-wrap">
+
+      <!-- Framework 01 -->
+      <div class="col-md-6 mb-5">
+        <div class="col-md-12 p-0">
+          <a href="#">
+            <img class="img-fluid rounded shadow " src="resources/images/frameworks/react-js.jpg"
+              alt="React Framework Front-end">
+          </a>
+        </div>
+        <div class="col-md-12 p-0">
+          <h3 class="my-3">React</h3>
+          <p>React é o framework de front-end criado e desenvolvido pelo Facebook. A equipe estava interessada em obter
+            alto desempenho criando uma interface do usuário eficaz. Jordan Walke propôs criar a biblioteca baseada na
+            combinação XHP e JavaScript em 2011.</p>
+          <a class="btn btn-info" href="https://pt-br.reactjs.org/" target="_blank">Visitar o site</a>
+        </div>
       </div>
-      <!-- Fim Box de Texto -->
+      <!-- Fim Framework 01 -->
 
-      <!-- Imagem - Editor Visual Code -->
-      <div class="col-lg-7">
-        <img src="resources/images/banners/banner-visual-code.jpg" class="img-fluid" alt="Visual Studio Code">
+      <!-- Framework 02 -->
+      <div class="col-md-6 mb-5">
+        <div class="col-md-12 p-0">
+          <a href="#">
+            <img class="img-fluid rounded shadow" src="resources/images/frameworks/vue-js.jpg"
+              alt="Vue.js Framework Front-end">
+          </a>
+        </div>
+        <div class="col-md-12 p-0">
+          <h3 class="my-3">Vue.js</h3>
+          <p>O Vue.js é o framework da web para construir interfaces de usuários. É uma ferramenta independente que cria
+            interfaces web e não requer a extensão adicional. O Vue.js foi criado por Evan You e lançado inicialmente em
+            fevereiro de 2014. </p>
+          <a class="btn btn-info" href="https://br.vuejs.org/index.html" target="_blank">Visitar o site</a>
+        </div>
       </div>
-      <!-- Fim Imagem - Editor Visual Code -->
+      <!-- Framework 02 -->
 
+      <!-- Framework 03 -->
+      <div class="col-md-6 mb-5">
+        <div class="col-md-12 p-0">
+          <a href="#">
+            <img class="img-fluid rounded shadow" src="resources/images/frameworks/angular-js.jpg"
+              alt="Angular Framework Front-end">
+          </a>
+        </div>
+        <div class="col-md-12 p-0">
+          <h3 class="my-3">Angular</h3>
+          <p>AngularJS é um framework JavaScript código aberto, mantido pelo Google, que auxilia na execução de
+            single-page applications. Seu objetivo é aumentar aplicativos que podem ser acessados por um navegador web.
+          </p>
+          <a class="btn btn-info" href="https://angular.io/" target="_blank">Visitar o site</a>
+        </div>
+      </div>
+      <!-- Fim Framework 03 -->
+
+      <!-- Framework 04 -->
+      <div class="col-md-6 mb-5">
+        <div class="col-md-12 p-0">
+          <a href="#">
+            <img class="img-fluid rounded shadow" src="resources/images/frameworks/materialize.jpg"
+              alt="Materialize Framework Front-end">
+          </a>
+        </div>
+        <div class="col-md-12 p-0">
+          <h3 class="my-3">Materialize</h3>
+          <p>Um moderno framework baseado em Material Design do Google, tecnologia que foca na simplicidade para a
+            indicação de como criar interfaces de usuário modernas.</p>
+          <a class="btn btn-info" href="https://materializecss.com/" target="_blank">Visitar o site</a>
+        </div>
+      </div>
+      <!-- Framework 04 -->
     </div>
-    <!-- Fim Seção Banner Visual Studio Code -->
+    <!-- Fim Linha com duas colunas -->
 
-    <!-- Path divisor -->
-    <div class="container-fluid banner-visual-code p-0">
-        <svg style="pointer-events: none" width="100%" height="50px" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 75">
-          <defs>
-          <style>
-                  .a {
-                    fill: none;
-                  }
-          
-                  .b {
-                    clip-path: url(#a);
-                  }
-          
-                  .c,
-                  .d {
-                    fill: #f9f9fc;
-                  }
-          
-                  .d {
-                    opacity: 0.5;
-                    isolation: isolate;
-                  }
-                </style>
-          <clipPath id="a">
+  </div>
+  <!-- Fim Seção Frameworks para Front-end -->
+
+
+  <!-- Seção Banner Visual Studio Code -->
+  <div
+    class="container-fluid d-flex flex-wrap justify-content-between align-items-center banner-visual-code text-white py-5">
+
+    <!-- Box de Texto -->
+    <div class="col-lg-5 text-center mb-5">
+      <h2>Destaque<small> em 2019</small></h2>
+      <p>O Visual Studio Code é um editor de código-fonte leve, mas poderoso, que é executado em sua área de trabalho e
+        está disponível para Windows, macOS e Linux.</p>
+      <a class="btn btn-lg btn-success mt-2" href="https://getbootstrap.com/" target="_blank" role="button">Visite o
+        site</a>
+    </div>
+    <!-- Fim Box de Texto -->
+
+    <!-- Imagem - Editor Visual Code -->
+    <div class="col-lg-7">
+      <img src="resources/images/banners/banner-visual-code.jpg" class="img-fluid" alt="Visual Studio Code">
+    </div>
+    <!-- Fim Imagem - Editor Visual Code -->
+
+  </div>
+  <!-- Fim Seção Banner Visual Studio Code -->
+
+  <!-- Path divisor -->
+  <div class="container-fluid banner-visual-code p-0">
+    <svg style="pointer-events: none" width="100%" height="50px" preserveAspectRatio="none"
+      xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 75">
+      <defs>
+        <style>
+          .a {
+            fill: none;
+          }
+
+          .b {
+            clip-path: url(#a);
+          }
+
+          .c,
+          .d {
+            fill: #f9f9fc;
+          }
+
+          .d {
+            opacity: 0.5;
+            isolation: isolate;
+          }
+        </style>
+        <clipPath id="a">
           <rect class="a" width="1920" height="75"></rect>
-          </clipPath>
-          </defs>
-          <!-- <title>wave</title> -->
-          <g class="b">
-          <path class="c" d="M1963,327H-105V65A2647.49,2647.49,0,0,1,431,19c217.7,3.5,239.6,30.8,470,36,297.3,6.7,367.5-36.2,642-28a2511.41,2511.41,0,0,1,420,48"></path>
-          </g>
-          <g class="b">
-          <path class="d" d="M-127,404H1963V44c-140.1-28-343.3-46.7-566,22-75.5,23.3-118.5,45.9-162,64-48.6,20.2-404.7,128-784,0C355.2,97.7,341.6,78.3,235,50,86.6,10.6-41.8,6.9-127,10"></path>
-          </g>
-          <g class="b">
-          <path class="d" d="M1979,462-155,446V106C251.8,20.2,576.6,15.9,805,30c167.4,10.3,322.3,32.9,680,56,207,13.4,378,20.3,494,24"></path>
-          </g>
-          <g class="b">
-          <path class="d" d="M1998,484H-243V100c445.8,26.8,794.2-4.1,1035-39,141-20.4,231.1-40.1,378-45,349.6-11.6,636.7,73.8,828,150"></path>
-          </g>
-        </svg>
-    </div>
-    <!-- Fim Path divisor -->
+        </clipPath>
+      </defs>
+      <!-- <title>wave</title> -->
+      <g class="b">
+        <path class="c"
+          d="M1963,327H-105V65A2647.49,2647.49,0,0,1,431,19c217.7,3.5,239.6,30.8,470,36,297.3,6.7,367.5-36.2,642-28a2511.41,2511.41,0,0,1,420,48">
+        </path>
+      </g>
+      <g class="b">
+        <path class="d"
+          d="M-127,404H1963V44c-140.1-28-343.3-46.7-566,22-75.5,23.3-118.5,45.9-162,64-48.6,20.2-404.7,128-784,0C355.2,97.7,341.6,78.3,235,50,86.6,10.6-41.8,6.9-127,10">
+        </path>
+      </g>
+      <g class="b">
+        <path class="d"
+          d="M1979,462-155,446V106C251.8,20.2,576.6,15.9,805,30c167.4,10.3,322.3,32.9,680,56,207,13.4,378,20.3,494,24">
+        </path>
+      </g>
+      <g class="b">
+        <path class="d"
+          d="M1998,484H-243V100c445.8,26.8,794.2-4.1,1035-39,141-20.4,231.1-40.1,378-45,349.6-11.6,636.7,73.8,828,150">
+        </path>
+      </g>
+    </svg>
+  </div>
+  <!-- Fim Path divisor -->
 
 
-    <!-- Seção DICAS DO NERD - Cursos / eventos / Carreira / Vídeo da Semana -->
-    <div class="container my-5">
-
-      
-      <!-- Linha com duas colunas -->
-      <div class="row d-flex flex-wrap">
-        
-        <!-- Tabs Cursos / eventos / Carreira -->
-        <div class="col-lg-6 mb-5">
-          <!-- Título da seção -->
-          <h2>Dicas<small> do Nerd</small></h2>
-          <p class="lead mb-4">Fique por dentro das novidades relacionadas ao mundo do desenvolvimento web.</p>
-          <ul class="nav nav-tabs" id="myTab" role="tablist">
-            <li class="nav-item">
-              <a class="nav-link active" id="cursos-tab" data-toggle="tab" href="#cursos" role="tab"
-                aria-controls="cursos" aria-selected="true">Cursos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="eventos-tab" data-toggle="tab" href="#eventos" role="tab" aria-controls="eventos"
-                aria-selected="false">Eventos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="carreira-tab" data-toggle="tab" href="#carreira" role="tab" aria-controls="carreira"
-                aria-selected="false">Carreira</a>
-            </li>
-          </ul>
-          <div class="tab-content" id="myTabContent">
-            <div class="tab-pane fade show active" id="cursos" role="tabpanel" aria-labelledby="cursos-tab">
-              <!-- Lista de CURSOS -->
-              <div class="list-group">
-                <button type="button"
-                  class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
-                  Alura
-                  <span class="badge badge-info badge-pill"><i class="fas fa-arrow-circle-right"></i></span>
-                </button>
-                <button type="button"
-                  class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
-                  CodeCademy
-                  <span class="badge badge-info badge-pill"><i class="fas fa-arrow-circle-right"></i></span>
-                </button>
-                <button type="button"
-                  class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
-                  Udacity
-                  <span class="badge badge-info badge-pill"><i class="fas fa-arrow-circle-right"></i></span>
-                </button>
-                <button type="button"
-                  class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
-                  Udemy
-                  <span class="badge badge-info badge-pill"><i class="fas fa-arrow-circle-right"></i></span>
-                </button>
-              </div>
-              <!-- Fim Lista de cursos -->
-            </div>
-            <div class="tab-pane fade" id="eventos" role="tabpanel" aria-labelledby="eventos-tab">
-              <!-- Lista de EVENTOS -->
-              <div class="list-group">
-                <button type="button"
-                  class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
-                  Fórum Internacional de TI Banrisul
-                  <span class="badge badge-info badge-pill"><i class="fas fa-arrow-circle-right"></i></span>
-                </button>
-                <button type="button"
-                  class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
-                  Brazil JS
-                  <span class="badge badge-info badge-pill"><i class="fas fa-arrow-circle-right"></i></span>
-                </button>
-                <button type="button"
-                  class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
-                  Fórum de Software Livre
-                  <span class="badge badge-info badge-pill"><i class="fas fa-arrow-circle-right"></i></span>
-                </button>
-              </div>
-              <!-- Fim Lista de Eventos -->
-            </div>
-            <div class="tab-pane fade" id="carreira" role="tabpanel" aria-labelledby="carreira-tab">
-              <!-- Lista de VAGAS DE EMPREGO / CARREIRA -->
-              <div class="list-group">
-                <button type="button"
-                  class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
-                  Baguete
-                  <span class="badge badge-info badge-pill"><i class="fas fa-arrow-circle-right"></i></span>
-                </button>
-                <button type="button"
-                  class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
-                  Infojobs
-                  <span class="badge badge-info badge-pill"><i class="fas fa-arrow-circle-right"></i></span>
-                </button>
-                <button type="button"
-                  class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
-                  Linkedin
-                  <span class="badge badge-info badge-pill"><i class="fas fa-arrow-circle-right"></i></span>
-                </button>
-              </div>
-              <!-- Fim Lista de Vagas de Emprego -->
-            </div>
-          </div>
-        </div>
-        <!-- Fim Tabs Cursos / eventos / Carreira -->
-
-        <!-- Vídeo da Semana -->
-        <div class="col-lg-6 bg-info rounded shadow py-3 text-white">
-          <!-- Título da seção -->
-          <h2>Vídeo<small> da Semana</small></h2>
-          <hr>
-          <p class="lead mb-4">GitHub Pages é uma opção para quem deseja hospedar seu site ou blog estático de graça, com automação do build e deploy contínuo.</p>
-            <!-- Vídeo responsivo -->
-            <div class="embed-responsive embed-responsive-16by9">
-              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/2MsN8gpT6jY" allowfullscreen></iframe>
-            </div>
-            <!-- Fim Vídeo responsivo -->
-            <a href="https://pages.github.com/" target="_blank" class="badge badge-info my-2 p-3">Visite o site e veja como é simples hospedar.</a>
-        </div>
-        <!-- Fim Vídeo da Semana -->
-
-      </div>
-      <!-- Linha com duas colunas -->
-
-    </div>
-    <!-- Fim Seção DICA DO NERD - Cursos / eventos / Carreira / Vídeo da Semana-->
+  <!-- Seção DICAS DO NERD - Cursos / eventos / Carreira / Vídeo da Semana -->
+  <div class="container my-5">
 
 
-    <!-- Path divisor -->
-    <div class="container-fluid p-0">
-        <svg style="pointer-events: none" width="100%" height="50px" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 75">
-          <defs>
-          <style>
-                  .aa {
-                    fill: none;
-                  }
-          
-                  .bb {
-                    clip-path: url(#aa);
-                  }
-          
-                  .cc,
-                  .dd {
-                    fill: #17A2B8;
-                  }
-          
-                  .dd {
-                    opacity: 0.5;
-                    isolation: isolate;
-                  }
-                </style>
-          <clipPath id="aa">
-          <rect class="aa" width="1920" height="75"></rect>
-          </clipPath>
-          </defs>
-          <g class="bb">
-          <path class="cc" d="M1963,327H-105V65A2647.49,2647.49,0,0,1,431,19c217.7,3.5,239.6,30.8,470,36,297.3,6.7,367.5-36.2,642-28a2511.41,2511.41,0,0,1,420,48"></path>
-          </g>
-          <g class="bb">
-          <path class="dd" d="M-127,404H1963V44c-140.1-28-343.3-46.7-566,22-75.5,23.3-118.5,45.9-162,64-48.6,20.2-404.7,128-784,0C355.2,97.7,341.6,78.3,235,50,86.6,10.6-41.8,6.9-127,10"></path>
-          </g>
-          <g class="bb">
-          <path class="dd" d="M1979,462-155,446V106C251.8,20.2,576.6,15.9,805,30c167.4,10.3,322.3,32.9,680,56,207,13.4,378,20.3,494,24"></path>
-          </g>
-          <g class="bb">
-          <path class="dd" d="M1998,484H-243V100c445.8,26.8,794.2-4.1,1035-39,141-20.4,231.1-40.1,378-45,349.6-11.6,636.7,73.8,828,150"></path>
-          </g>
-        </svg>
-    </div>
-    <!-- Fim Path divisor -->
+    <!-- Linha com duas colunas -->
+    <div class="row d-flex flex-wrap">
 
-
-    <!-- Seção FORM CONTATO -->
-    <div class="container-fluid bg-info py-5">
-
-      <div class="container text-white col-lg-6">
-
+      <!-- Tabs Cursos / eventos / Carreira -->
+      <div class="col-lg-6 mb-5">
         <!-- Título da seção -->
-        <h3 class="mb-3 text-center">Contato</h3>
-        <p class="lead text-center mb-4">Fique a vontade para enviar a sua dica, comentário, divulgação de cursos,
-          eventos ou vagas de emprego.</p>
-        <form>
-          <div class="form-group">
-            <div class="form-group">
-              <!-- <label for="formGroupExampleInput">Nome</label> -->
-              <input type="text" class="form-control" id="formGroupExampleInput"
-                placeholder="Por favor digite seu nome completo">
+        <h2>Dicas<small> do Nerd</small></h2>
+        <p class="lead mb-4">Fique por dentro das novidades relacionadas ao mundo do desenvolvimento web.</p>
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="cursos-tab" data-toggle="tab" href="#cursos" role="tab"
+              aria-controls="cursos" aria-selected="true">Cursos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="eventos-tab" data-toggle="tab" href="#eventos" role="tab" aria-controls="eventos"
+              aria-selected="false">Eventos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="carreira-tab" data-toggle="tab" href="#carreira" role="tab" aria-controls="carreira"
+              aria-selected="false">Carreira</a>
+          </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="cursos" role="tabpanel" aria-labelledby="cursos-tab">
+            <!-- Lista de CURSOS -->
+            <div class="list-group">
+              <button type="button"
+                class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                Alura
+                <span class="badge badge-info badge-pill"><i class="fas fa-arrow-circle-right"></i></span>
+              </button>
+              <button type="button"
+                class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                CodeCademy
+                <span class="badge badge-info badge-pill"><i class="fas fa-arrow-circle-right"></i></span>
+              </button>
+              <button type="button"
+                class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                Udacity
+                <span class="badge badge-info badge-pill"><i class="fas fa-arrow-circle-right"></i></span>
+              </button>
+              <button type="button"
+                class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                Udemy
+                <span class="badge badge-info badge-pill"><i class="fas fa-arrow-circle-right"></i></span>
+              </button>
             </div>
-            <div class="form-group">
-              <!-- <label for="formGroupExampleInput">Email</label> -->
-              <input type="email" class="form-control" id="formGroupExampleInput"
-                placeholder="Por favor digite seu email">
-            </div>
-            <div class="form-group">
-              <!-- <label for="formGroupExampleInput2">Telefone / WhatsApp</label> -->
-              <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Ex.: (51) 99999-9999">
-            </div>
-            <div class="form-group">
-              <textarea class="form-control area" id="exampleFormControlTextarea1" rows="3"></textarea>
-            </div>
-            <button type="submit" class="btn btn-block btn-dark">Enviar mensagem</button>
+            <!-- Fim Lista de cursos -->
           </div>
-        </form>
+          <div class="tab-pane fade" id="eventos" role="tabpanel" aria-labelledby="eventos-tab">
+            <!-- Lista de EVENTOS -->
+            <div class="list-group">
+              <button type="button"
+                class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                Fórum Internacional de TI Banrisul
+                <span class="badge badge-info badge-pill"><i class="fas fa-arrow-circle-right"></i></span>
+              </button>
+              <button type="button"
+                class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                Brazil JS
+                <span class="badge badge-info badge-pill"><i class="fas fa-arrow-circle-right"></i></span>
+              </button>
+              <button type="button"
+                class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                Fórum de Software Livre
+                <span class="badge badge-info badge-pill"><i class="fas fa-arrow-circle-right"></i></span>
+              </button>
+            </div>
+            <!-- Fim Lista de Eventos -->
+          </div>
+          <div class="tab-pane fade" id="carreira" role="tabpanel" aria-labelledby="carreira-tab">
+            <!-- Lista de VAGAS DE EMPREGO / CARREIRA -->
+            <div class="list-group">
+              <button type="button"
+                class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                Baguete
+                <span class="badge badge-info badge-pill"><i class="fas fa-arrow-circle-right"></i></span>
+              </button>
+              <button type="button"
+                class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                Infojobs
+                <span class="badge badge-info badge-pill"><i class="fas fa-arrow-circle-right"></i></span>
+              </button>
+              <button type="button"
+                class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                Linkedin
+                <span class="badge badge-info badge-pill"><i class="fas fa-arrow-circle-right"></i></span>
+              </button>
+            </div>
+            <!-- Fim Lista de Vagas de Emprego -->
+          </div>
+        </div>
       </div>
-    </div><!-- Fim Seção Contato -->
+      <!-- Fim Tabs Cursos / eventos / Carreira -->
 
-    <!-- FOOTER -->
-    <div class="container-fluid py-5">
-      <div class="container text-center">
-        <img src="resources/images/logo-dica-do-nerd.png" class="img-fluid logo-dica-do-nerd" alt="Logo Dica do Nerd">
-        
-        <p>Projeto final - Disciplina: "Desenvolvimento Web para Dispositivos Móveis"
+      <!-- Vídeo da Semana -->
+      <div class="col-lg-6 bg-info rounded shadow py-3 text-white">
+        <!-- Título da seção -->
+        <h2>Vídeo<small> da Semana</small></h2>
+        <hr>
+        <p class="lead mb-4">GitHub Pages é uma opção para quem deseja hospedar seu site ou blog estático de graça, com
+          automação do build e deploy contínuo.</p>
+        <!-- Vídeo responsivo -->
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/2MsN8gpT6jY"
+            allowfullscreen></iframe>
+        </div>
+        <!-- Fim Vídeo responsivo -->
+        <a href="https://pages.github.com/" target="_blank" class="badge badge-info my-2 p-3">Visite o site e veja como
+          é simples hospedar.</a>
+      </div>
+      <!-- Fim Vídeo da Semana -->
+
+    </div>
+    <!-- Linha com duas colunas -->
+
+  </div>
+  <!-- Fim Seção DICA DO NERD - Cursos / eventos / Carreira / Vídeo da Semana-->
+
+
+  <!-- Path divisor -->
+  <div class="container-fluid p-0">
+    <svg style="pointer-events: none" width="100%" height="50px" preserveAspectRatio="none"
+      xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 75">
+      <defs>
+        <style>
+          .aa {
+            fill: none;
+          }
+
+          .bb {
+            clip-path: url(#aa);
+          }
+
+          .cc,
+          .dd {
+            fill: #17A2B8;
+          }
+
+          .dd {
+            opacity: 0.5;
+            isolation: isolate;
+          }
+        </style>
+        <clipPath id="aa">
+          <rect class="aa" width="1920" height="75"></rect>
+        </clipPath>
+      </defs>
+      <g class="bb">
+        <path class="cc"
+          d="M1963,327H-105V65A2647.49,2647.49,0,0,1,431,19c217.7,3.5,239.6,30.8,470,36,297.3,6.7,367.5-36.2,642-28a2511.41,2511.41,0,0,1,420,48">
+        </path>
+      </g>
+      <g class="bb">
+        <path class="dd"
+          d="M-127,404H1963V44c-140.1-28-343.3-46.7-566,22-75.5,23.3-118.5,45.9-162,64-48.6,20.2-404.7,128-784,0C355.2,97.7,341.6,78.3,235,50,86.6,10.6-41.8,6.9-127,10">
+        </path>
+      </g>
+      <g class="bb">
+        <path class="dd"
+          d="M1979,462-155,446V106C251.8,20.2,576.6,15.9,805,30c167.4,10.3,322.3,32.9,680,56,207,13.4,378,20.3,494,24">
+        </path>
+      </g>
+      <g class="bb">
+        <path class="dd"
+          d="M1998,484H-243V100c445.8,26.8,794.2-4.1,1035-39,141-20.4,231.1-40.1,378-45,349.6-11.6,636.7,73.8,828,150">
+        </path>
+      </g>
+    </svg>
+  </div>
+  <!-- Fim Path divisor -->
+
+
+  <!-- Seção Contato -->
+<div class="container-fluid bg-info">
+    <div class="container d-flex flex-wrap py-5">
+
+        <!-- Seção Formulário de Contato -->
+        <div class="text-white col-md-6 mb-5">
+    
+          <!-- Título da seção -->
+          <h3 class="mb-3 text-center">Contato</h3>
+          <p class="lead text-center mb-4">Fique a vontade para enviar a sua dica, comentário, divulgação de cursos, eventos
+            ou vagas de emprego.</p>
+    
+          <!-- Formulário -->
+          <form>
+            <div class="form-group">
+              <div class="form-group">
+                <!-- <label for="formGroupExampleInput">Nome</label> -->
+                <input type="text" class="form-control" id="formGroupExampleInput"
+                  placeholder="Por favor digite seu nome completo">
+              </div>
+              <div class="form-group">
+                <!-- <label for="formGroupExampleInput">Email</label> -->
+                <input type="email" class="form-control" id="formGroupExampleInput"
+                  placeholder="Por favor digite seu email">
+              </div>
+              <div class="form-group">
+                <!-- <label for="formGroupExampleInput2">Telefone / WhatsApp</label> -->
+                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Ex.: (51) 99999-9999">
+              </div>
+              <div class="form-group">
+                <textarea class="form-control area" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+              <button type="submit" class="btn btn-block btn-dark">Enviar mensagem</button>
+            </div>
+          </form>
+          <!-- Fim Formulário -->
+    
+        </div>
+        <!-- Fim Seção Formulário de Contato -->
+    
+    
+        <!-- Redes Sociais -->
+        <div class="col-md-6 mb-5 links-contato">
+          <aside>
+            <h3 class="text-center text-white mb-5">Nossas redes</h3>
+    
+            <ul class="nav justify-content-center"> 
+              <li class="nav-item">
+                <a class="nav-link active" href="https://www.behance.net/marcelopoars" target="_blank"><i class="fab fa-behance-square"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.facebook.com/MarceloPereiraPoa" target="_blank"><i class="fab fa-facebook-square"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://github.com/marcelopoars" target="_blank"><i class="fab fa-github"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://linkedin.com/in/marcelopoars" target="_blank"><i class="fab fa-linkedin"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://twitter.com/marcelopoars" target="_blank"><i class="fab fa-twitter-square"></i></a>
+              </li>
+            </ul>
+            <!-- Fim Redes Sociais -->
+    
+            <hr class="m-5">
+    
+            <!-- Contatos -->
+            <ul class="nav flex-column text-center contato">
+              <li class="nav-item">
+                <a class="nav-link active" href="tel:5130851776"><i class="fas fa-phone-volume mr-2"></i> (51) 3085-1776</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="mailto:marcelo.fatecpoa@gmail.com"><i class="fas fa-at mr-2"></i> Email</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="tel:51981838118" target="_blank"><i class="fas fa-mobile-alt mr-2"></i> (51) 98183-8118</a>
+              </li>
+            </ul>
+            <!-- Fim Contatos -->
+    
+          </aside>
+        </div>
+    
+      </div>
+</div>
+  <!-- Fim Seção Contato -->
+
+
+  <!-- FOOTER -->
+  <div class="container-fluid py-5">
+    <div class="container text-center">
+      <img src="resources/images/logo-dica-do-nerd.png" class="img-fluid logo-dica-do-nerd" alt="Logo Dica do Nerd">
+
+      <p>Projeto final - Disciplina: "Desenvolvimento Web para Dispositivos Móveis"
         <br>
         Faculdade Senac Porto Alegre - RS</p>
 
-        <!-- Créditos -->
-        <p>
-          &copy; 2019 | Desenvolvido com <span>♥</span> por 
-          <a href="http://marcelopoars.github.io">
-            <span>Marcelo Pereira</span></a> e hospedado em <a href="https://pages.github.com/" target="_blank"><span>GitHub Pages</span>
-          </a>.
-        </p>
-        <!-- Fim Créditos -->
+      <!-- Créditos -->
+      <p>
+        &copy; 2019 | Desenvolvido com <span>♥</span> por
+        <a href="http://marcelopoars.github.io">
+          <span>Marcelo Pereira</span></a> e hospedado em <a href="https://pages.github.com/"
+          target="_blank"><span>GitHub Pages</span>
+        </a>.
+      </p>
+      <!-- Fim Créditos -->
 
-      </div>
-    </div><!-- Fim Footer -->
+    </div>
+  </div><!-- Fim Footer -->
 
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <script src="vendors/flickity/js/flickity.pkgd.min.js"></script>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="vendors/flickity/js/flickity.pkgd.min.js"></script>
 
-  </body>
+</body>
 
 </html>

@@ -138,13 +138,13 @@ a {
 ****************************/
 
 .form-control {
-    padding: 25px;
-    border-radius: 50px;
+    padding: 15px;
+    border-radius: 10px;
 }
 
 /* Input text-area */
 .area {
-    border-radius: 15px;
+    border-radius: 10px;
 }
 
 .list-group i {
@@ -160,4 +160,17 @@ a {
 .logo-dica-do-nerd {
   max-width: 80px;
   margin-bottom: 30px;
+}
+
+.links-contato ul {
+  list-style: none;
+}
+
+
+.links-contato a{
+  color: #FFF;
+}
+
+.links-contato i {
+  font-size: 1.6rem;
 }
