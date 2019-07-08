@@ -1,7 +1,9 @@
-// Identificar o clique no menu
-// Verificar o item que foi clicado e fazer referência com o alvo
-// Verificar a distância entre o alvo e o topo
-// Animar o scroll até o alvo
+/*
+  #   Projeto final - Disciplina: "Desenvolvimento Web para Dispositivos Móveis"
+  #   Faculdade Senac Porto Alegre - RS
+  #   Aluno: Marcelo Pereira da Silva
+  #   Matrícula: 631110033
+ */
 
 const menuItems = document.querySelectorAll('.navbar [href^="#"]');
 
