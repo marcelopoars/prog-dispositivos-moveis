@@ -6,25 +6,15 @@
 
  */
 
- 
 
 
-// back to top 
-$('.logo').on('click', function(e) {
-  e.preventDefault();
-  $('.nav-toggle').removeClass('open');
-  $('.menu-left').removeClass('collapse');
-  $('html, body').animate({
-    scrollTop: 0
-  }, 750, 'easeInOutQuad')
-});
 
 // smooth scroll between sections
-$('a[href^="#"]').on('click', function(event) {
+$('a[href^="#"]').on('click', function (event) {
 
   var $target = $(this.getAttribute('href'));
 
-  if($target.length) {
+  if ($target.length) {
     event.preventDefault();
     $('html, body').stop().animate({
       scrollTop: $target.offset().top
@@ -34,12 +24,12 @@ $('a[href^="#"]').on('click', function(event) {
 
 
 // TOGGLE HAMBURGER & COLLAPSE NAV
-$('.nav-toggle').on('click', function() {
+$('.nav-toggle').on('click', function () {
   $(this).toggleClass('open');
   $('.menu-left').toggleClass('collapse');
 });
 // REMOVE X & COLLAPSE NAV ON ON CLICK
-$('.menu-left a').on('click', function() {
+$('.menu-left a').on('click', function () {
   $('.nav-toggle').removeClass('open');
   $('.menu-left').removeClass('collapse');
 });
@@ -52,37 +42,37 @@ var lastScrollTop = 0;
 var delta = 5;
 var navbarHeight = $('.nav-bar').outerHeight();
 
-$(window).scroll(function(event){
-    didScroll = true;
+$(window).scroll(function (event) {
+  didScroll = true;
 });
 
-setInterval(function() {
-    if (didScroll) {
-        hasScrolled();
-        didScroll = false;
-    }
+setInterval(function () {
+  if (didScroll) {
+    hasScrolled();
+    didScroll = false;
+  }
 }, 250);
 
 function hasScrolled() {
-    var st = $(this).scrollTop();
+  var st = $(this).scrollTop();
 
-    // Make sure they scroll more than delta
-    if(Math.abs(lastScrollTop - st) <= delta)
-        return;
+  // Make sure they scroll more than delta
+  if (Math.abs(lastScrollTop - st) <= delta)
+    return;
 
-    // If they scrolled down and are past the navbar, add class .nav-up.
-    // This is necessary so you never see what is "behind" the navbar.
-    if (st > lastScrollTop && st > navbarHeight){
-        // Scroll Down
-        $('.nav-bar').removeClass('show-nav').addClass('hide-nav');
-        $('.nav-toggle').removeClass('open');
-        $('.menu-left').removeClass('collapse');
-    } else {
-        // Scroll Up
-        if(st + $(window).height() < $(document).height()) {
-            $('.nav-bar').removeClass('hide-nav').addClass('show-nav');
-        }
+  // If they scrolled down and are past the navbar, add class .nav-up.
+  // This is necessary so you never see what is "behind" the navbar.
+  if (st > lastScrollTop && st > navbarHeight) {
+    // Scroll Down
+    $('.nav-bar').removeClass('show-nav').addClass('hide-nav');
+    $('.nav-toggle').removeClass('open');
+    $('.menu-left').removeClass('collapse');
+  } else {
+    // Scroll Up
+    if (st + $(window).height() < $(document).height()) {
+      $('.nav-bar').removeClass('hide-nav').addClass('show-nav');
     }
+  }
 
-    lastScrollTop = st;
+  lastScrollTop = st;
 }

@@ -138,13 +138,13 @@ a {
 ****************************/
 
 .form-control {
-    padding: 15px;
-    border-radius: 10px;
+    padding: 20px;
+    border-radius: 15px;
 }
 
 /* Input text-area */
 .area {
-    border-radius: 10px;
+    border-radius: 15px;
 }
 
 .list-group i {
