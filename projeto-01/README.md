@@ -1,5 +1,14 @@
-#### Faculdade Senac - Porto Alegre - RS
+  # Projeto Nostra Pasta - Disciplina: "Desenvolvimento Web para Dispositivos Móveis"
 
-# Atividade 01
+![banner.png](https://github.com/marcelopoars/prog-dispositivos-moveis/blob/master/projeto-final/site/projeto-final-dica-do-nerd.png)
 
-### Desenvolvimento Web para Dispositivos Móveis (DWDM)
+  - Faculdade Senac Porto Alegre - RS
+  - Aluno: Marcelo Pereira da Silva
+  - Matrícula: 631110033
+
+
+## Proposta inicial
+
+Projetar e codificar uma interface (estática) web para um site utilizando os recursos passados em aula.
+
+> **Link do site:** [Clique aqui](https://marcelopoars.github.io/prog-dispositivos-moveis/projeto-01/)

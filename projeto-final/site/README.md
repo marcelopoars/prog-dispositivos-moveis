@@ -9,7 +9,7 @@
 
 ## Proposta inicial
 
-Projetar e codificar uma interface (estatica) web para um site / blog com conteúdo relevante na área
+Projetar e codificar uma interface (estática) web para um site / blog com conteúdo relevante na área
 de desenvolvimento web, sistemas e aplicativos.
 
 O objetivo principal do site, é compartilhar conhecimento, dicas, sugestões, novidades e
