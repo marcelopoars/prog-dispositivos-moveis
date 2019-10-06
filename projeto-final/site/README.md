@@ -30,55 +30,55 @@ e outros assuntos que forem surgindo ao longo do desenvolvimento do projeto.
 
 
 ## Proposta de estrutura do site/blog
-Site em página única seguindo a estrutura abaixo:
+> Site em página única seguindo a estrutura abaixo:
 
 
 ### Navbar
-Navbar com links para seções
+> Navbar com links para seções
 
 
 ### Slider
-Slider principal com conteúdo destaque
+> Slider principal com conteúdo destaque
 
 
 ### Campo de busca
-Campo de busca de conteúdo do site
+> Campo de busca de conteúdo do site
 
 
 ### Extensões Visual Studio Code
-Seção com slider com extensões mais populares para Visual Studio Code
+> Seção com slider com extensões mais populares para Visual Studio Code
 
 
 ### Frase da Semana
-Frase relacionadas ao mundo da tecnologia, inovação, empreendedorismo e conhecimento
+> Frase relacionadas ao mundo da tecnologia, inovação, empreendedorismo e conhecimento
 
 
 ### Frameworks Front-end
-Seção com cards e imagens / Frameworks Front-end
+> Seção com cards e imagens / Frameworks Front-end
 
 
 ### Banner Destaque
-Banner de conteúdo em destaque ou publicidade
+> Banner de conteúdo em destaque ou publicidade
 
 
 ### Dica do Nerd
-Seção com objetivo de divulgar (cursos, eventos e vagas)
+> Seção com objetivo de divulgar (cursos, eventos e vagas)
 
 
 ### Vídeo da Semana
-Seção com objetivo de divulgar novidades sobre tecnologia / desenvolvimento (vídeo)
+> Seção com objetivo de divulgar novidades sobre tecnologia / desenvolvimento (vídeo)
 
 
 ### Contato
-Formulário de contato
+> Formulário de contato
 
 
 ### Nossas Redes
-Links para redes sociais
+> Links para redes sociais
 
 
 ### Footer / Créditos
-Informações sobre projeto e desenvolvedor
+> Informações sobre projeto e desenvolvedor
 
 
 
