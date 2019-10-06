@@ -1,6 +1,6 @@
   # Projeto Nostra Pasta - Disciplina: "Desenvolvimento Web para Dispositivos Móveis"
 
-![banner.png](https://github.com/marcelopoars/prog-dispositivos-moveis/blob/master/projeto-final/site/projeto-final-dica-do-nerd.png)
+![banner.png](https://github.com/marcelopoars/prog-dispositivos-moveis/blob/master/projeto-01/projeto-nostra-pasta.png)
 
   - Faculdade Senac Porto Alegre - RS
   - Aluno: Marcelo Pereira da Silva
