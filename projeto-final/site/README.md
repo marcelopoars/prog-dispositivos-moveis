@@ -19,7 +19,7 @@ mobile”.
 No blog ainda haverá uma seção divulgando vagas de trabalho, cursos, concursos, eventos
 e outros assuntos que forem surgindo ao longo do desenvolvimento do projeto.
 
-> **Link do site:** [Link](https://marcelopoars.github.io/prog-dispositivos-moveis/projeto-final/site/)
+> **Link do site:** [Clique aqui](https://marcelopoars.github.io/prog-dispositivos-moveis/projeto-final/site/)
 
 
 ## Público alvo do site/blog
