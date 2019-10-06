@@ -1,10 +1,13 @@
-  # Projeto final - Disciplina: "Desenvolvimento Web para Dispositivos Móveis"
+  # Projeto Dica do Nerd
+  ### Disciplina: "Desenvolvimento Web para Dispositivos Móveis"
 
 ![banner.png](https://github.com/marcelopoars/prog-dispositivos-moveis/blob/master/projeto-final/site/projeto-final-dica-do-nerd.png)
 
-  - Faculdade Senac Porto Alegre - RS
-  - Aluno: Marcelo Pereira da Silva
-  - Matrícula: 631110033
+- Faculdade Senac Porto Alegre - RS
+- Aluno: Marcelo Pereira da Silva
+- Matrícula: 631110033
+
+> **Link do site:** [Clique aqui](https://marcelopoars.github.io/prog-dispositivos-moveis/projeto-final/site/)
 
 
 ## Proposta inicial
@@ -18,9 +21,6 @@ mobile”.
 
 No blog ainda haverá uma seção divulgando vagas de trabalho, cursos, concursos, eventos
 e outros assuntos que forem surgindo ao longo do desenvolvimento do projeto.
-
-> **Link do site:** [Clique aqui](https://marcelopoars.github.io/prog-dispositivos-moveis/projeto-final/site/)
-
 
 ## Público alvo do site/blog
 - Estudantes
